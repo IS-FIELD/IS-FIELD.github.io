@@ -55,7 +55,7 @@ content:
         link_text: '<i class="fas fa-cloud"></i> The first Dataset focusing on Non-verbal Vocalization'
         quote: >
           This is an open-source, word-level annotated speech dataset featuring non-verbal vocalizations for human-like synthesis.  
-          It is currently under review for the **NeurIPS 2025 Datasets and Benchmarks Track**.
+          It is currently under review for the NeurIPS 2025 Datasets and Benchmarks Track.
         description: | # this will include new lines to allow paragraphs
             This project was initiated in January 2025 in collaboration with colleagues from the Amphion & Quwan Technology Joint Laboratory. The dataset is designed to facilitate the training of speech synthesis models that can generate human-like non-verbal vocalizations, such as laughter, sighs, and other expressive sounds.
           
@@ -68,7 +68,7 @@ content:
         link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
 
         quote: >
-          This project was developed as part of the course EIE3280, where I served as the team leader. We leveraged the latest AI technologies to build a system that helps novice academic researchers with paper **finding**, **summarization**, and **retrieval**.
+          This project was developed as part of the course EIE3280, where I served as the team leader. We leveraged the latest AI technologies to build a system that helps novice academic researchers with paper finding, summarization, and retrieval.
 
         description: |
           We critically analyzed the limitations of current academic search engines and conventional RAG systems.  
