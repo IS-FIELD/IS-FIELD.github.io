@@ -55,9 +55,9 @@ content:
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: NVspeech
-        icon: fab fa-github
+        # icon: fab fa-github
         link: https://nvspeech.github.io/
-        link_text: The first Dataset focusing on Non-verbal Vocalization
+        link_text: '<i class="fa-solid fa-cloud"></i> The first Dataset focusing on Non-verbal Vocalization'
         quote: >
           This is a open source Word-level Annotated Speech Dataset with Non-verbal Vocalization for Human-like Synthesis, which is currently under reviewed by NeurIPS 2025 Datasets and Benchmark Track.
         description: | # this will include new lines to allow paragraphs
@@ -68,7 +68,7 @@ content:
         title: PaperHelper
         icon: fas cloud
         link: https://github.com/IS-FIELD/EIE3280Project
-        link_text: An integrated system for novice academic researchers that combines two complementary components
+        link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
 
         quote: >
           This is the project led by myself on the course EIE3280, we use the latests AI technologies to build a system that can help novice academic researchers to Find-Summarize-Retrieval papers.
@@ -82,6 +82,7 @@ content:
         sub_title: Research Advisor
         caption: October 2024 - Present
         link: https://github.com/open-mmlab/Amphion/tree/main
+        link_text: '<i class="fab fa-github"></i>Amphion GitHub Page'
         quote: >
           Amphion is the lab led by Prof. WU Zhizheng, focusing on the research of AI Audio, Music, and Speech Generation.
         description: | # this will include new lines to allow paragraphs
