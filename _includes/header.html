@@ -36,10 +36,15 @@
         {%- endif -%}
         {%- if site.Huggingface_username -%}
         <li>
-          <a target="_blank" href="https://huggingface.co/{{ site.Huggingface_username | cgi_escape | escape }}"
-            class="button button--sacnite button--round-l" title="Huggingface link">
-            <img src="{{ '/images/huggingface.svg' | relative_url }}" alt="Hugging Face"
-              style="height: 24px; vertical-align: middle;" />
+          <a href="https://huggingface.co/IsField" target="_blank" style="display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 64px;
+                    height: 64px;
+                    background-color: #333;
+                    border-radius: 50%;
+                    overflow: hidden;">
+            <img src="/images/huggingface-color.svg" alt="Hugging Face" style="width: 60%; height: 60%; object-fit: contain;" />
           </a>
         </li>
         {%- endif -%}

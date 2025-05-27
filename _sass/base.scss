@@ -11,7 +11,7 @@ button, input[type="button"], input[type="reset"], input[type="submit"] {
   color: #fff;
   cursor: pointer;
   display: inline-block;
-  font-family: "Kaiti", "楷体", "STKaiti", "KaiTi", "KaiTi_GB2312", "Times New Roman", Times, serif;
+  font-family: "Times New Roman",Times, serif;
   font-size: 1rem;
   -webkit-font-smoothing: antialiased;
   font-weight: 600;
@@ -40,12 +40,11 @@ fieldset {
   border: 1px solid #ddd;
   margin: 0 0 0.75rem;
   padding: 1.5rem; }
-
 input,
 label,
 select {
   display: block;
-  font-family: "Kaiti", "楷体", "STKaiti", "KaiTi", "KaiTi_GB2312", "Times New Roman", Times, serif;
+  font-family: "Times New Roman",Times,serif;
   font-size: 1rem; }
 
 label {
@@ -152,16 +151,16 @@ body {
   -webkit-font-smoothing: antialiased;
 }
 
-// 针对中文内容，使用 lang 属性选择器
+// 针对中文内容,使用 lang 属性选择器
 body :lang(zh),
 body :lang(zh-cn),
 body :lang(zh-Hans),
 body :lang(zh-Hant) {
-  font-family: "Kaiti", "楷体", "STKaiti", "KaiTi", "KaiTi_GB2312", "Times New Roman", Times, serif;   }
+  font-family: "Times New Roman",Times,serif;   }
 
 .center-text {
   text-align: center; }
-  
+
 .container {
   margin-top:30px;
 
