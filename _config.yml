@@ -88,6 +88,7 @@ content:
     content: | # this will include new lines to allow paragraphs
       - Languages: Python, PyTorch, HTML, Bash, VHDL
       - Tools: Linux, Git&GitHub, Docker, Huggingface, Slurm, Vivado, MultiSim
+      - Experience: Deep Learning, Signal Processing & System, Digital Circuit Design
 # Footer
 footer_show_references: false
 # references_title: References on request (Override references text)
