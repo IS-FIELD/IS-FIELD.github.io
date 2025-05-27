@@ -148,12 +148,20 @@ html {
 
 body {
   background: #ffffff;
-  font-family: "Kaiti", "楷体", "STKaiti", "KaiTi", "KaiTi_GB2312", "Times New Roman", Times, serif;
-  -webkit-font-smoothing: antialiased; }
+  font-family: "Times New Roman", Times, serif;
+  -webkit-font-smoothing: antialiased;
+}
+
+// 针对中文内容，使用 lang 属性选择器
+body :lang(zh),
+body :lang(zh-cn),
+body :lang(zh-Hans),
+body :lang(zh-Hant) {
+  font-family: "Kaiti", "楷体", "STKaiti", "KaiTi", "KaiTi_GB2312", "Times New Roman", Times, serif;   }
 
 .center-text {
   text-align: center; }
-
+  
 .container {
   margin-top:30px;
 

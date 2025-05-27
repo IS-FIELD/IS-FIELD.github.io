@@ -66,9 +66,9 @@ content:
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
         title: PaperHelper
-        icon: fas cloud
+        # icon: fas cloud
         link: https://github.com/IS-FIELD/EIE3280Project
-        link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
+        link_text: '<i class="fas fa-cloud"></i> An integrated system for novice academic researchers that combines two complementary components'
 
         quote: >
           This is the project led by myself on the course EIE3280, we use the latests AI technologies to build a system that can help novice academic researchers to Find-Summarize-Retrieval papers.

@@ -38,11 +38,11 @@
         <li>
           <a target="_blank" href="https://huggingface.co/{{ site.Huggingface_username | cgi_escape | escape }}"
             class="button button--sacnite button--round-l" title="Huggingface link">
-            <img src="https://huggingface.co/front/assets/huggingface_logo-noborder.svg" alt="Hugging Face"
+            <img src="{{ '/images/huggingface.svg' | relative_url }}" alt="Hugging Face"
               style="height: 24px; vertical-align: middle;" />
           </a>
         </li>
-        {%- endif -%}        
+        {%- endif -%}
         {%- if site.stackoverflow_username -%}
           <li>
             <a target="_blank" href="https://stackoverflow.com/users/{{ site.stackoverflow_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
