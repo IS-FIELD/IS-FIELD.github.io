@@ -29,9 +29,11 @@
         {%- endif -%}
         {%- if site.github_username -%}
           <li>
-            <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="button button--sacnite button--round-l"
+            <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" 
+            class="button button--sacnite button--round-l"
             style="display: flex; align-items: center; justify-content: center;">
-              <i class="fab fa-github" title="Github link"></i>
+            <img src="/images/github.svg" alt="Github"
+                  style="width: 60%; height: 60%; object-fit: contain;" />
             </a>
           </li>
         {%- endif -%}
