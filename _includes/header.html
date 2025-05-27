@@ -27,16 +27,25 @@
             </a>
           </li>
         {%- endif -%}
+        <!-- GitHub -->
         {%- if site.github_username -%}
-          <li>
-            <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
-              <i class="fab fa-github" title="Github link"></i>
-            </a>
-          </li>
+        <li>
+          <a target="_blank" href="https://github.com/{{ site.github_username | cgi_escape | escape }}" style="display: inline-flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 64px;
+                    height: 64px;
+                    background-color: #333;
+                    border-radius: 50%;">
+            <i class="fab fa-github" style="font-size: 32px; color: white;" title="GitHub link"></i>
+          </a>
+        </li>
         {%- endif -%}
+
+        <!-- Hugging Face -->
         {%- if site.Huggingface_username -%}
         <li>
-          <a href="https://huggingface.co/IsField" target="_blank" style="display: inline-flex;
+          <a target="_blank" href="https://huggingface.co/{{ site.Huggingface_username | cgi_escape | escape }}" style="display: inline-flex;
                     align-items: center;
                     justify-content: center;
                     width: 64px;
@@ -48,6 +57,7 @@
           </a>
         </li>
         {%- endif -%}
+        
         {%- if site.stackoverflow_username -%}
           <li>
             <a target="_blank" href="https://stackoverflow.com/users/{{ site.stackoverflow_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
