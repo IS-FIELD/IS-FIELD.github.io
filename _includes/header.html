@@ -37,9 +37,9 @@
         {%- if site.Huggingface_username -%}
         <li>
           <a target="_blank" href="https://huggingface.co/{{ site.Huggingface_username | cgi_escape | escape }}"
-            class="button button--sacnite button--round-l">
+            class="button button--sacnite button--round-l" style="display: flex; align-items: center; justify-content: center;">
             <img src="/images/huggingface-color.svg" alt="Hugging Face" style="width: 60%; height: 60%; object-fit: contain;" />
-          </a>
+          </a>   
         </li>
         {%- endif -%}
         {%- if site.stackoverflow_username -%}
