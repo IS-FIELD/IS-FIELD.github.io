@@ -6,7 +6,7 @@ repository: Git repository where your resume will be hosted, only required if yo
 version: 2
 
 # Personal info
-name: 陆奕衡 Lu Yiheng
+name: 陆奕衡  Yiheng Lu
 title: CUHKSZ UG'27
 email: 123090391@link.cuhk.edu.cn
 # email_title: Email (Email title override)
@@ -37,8 +37,8 @@ Huggingface_username: IsField
 about_profile_image: images/profile.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi I'm Lu Yiheng, a Music lover, Gym bro, also an Aspiring AI researcher. 
-  I'm a 3rd Year undergraduate student at The Chinese University of Hong Kong, Shenzhen, majoring in Electric Engineering. 
-  I'm experienced in Deep Learning & Signal Processing, and have a strong interest in the field of Swarm Intelligence, Robotics and Networking.
+  I'm a 3rd Year Undergraduate student at The Chinese University of Hong Kong, Shenzhen, majoring in Electric Engineering. 
+  My experience lies in Deep Learning & Signal Processing, and I have a strong interest in the field of Swarm Intelligence, Robotics and Networking.
 
 
 
@@ -54,9 +54,11 @@ content:
         link: https://nvspeech.github.io/
         link_text: '<i class="fas fa-cloud"></i> The first Dataset focusing on Non-verbal Vocalization'
         quote: >
-          This is a open source Word-level Annotated Speech Dataset with Non-verbal Vocalization for Human-like Synthesis, which is currently under reviewed by NeurIPS 2025 Datasets and Benchmark Track.
+          This is an open-source, word-level annotated speech dataset featuring non-verbal vocalizations for human-like synthesis.  
+          It is currently under review for the **NeurIPS 2025 Datasets and Benchmarks Track**.
         description: | # this will include new lines to allow paragraphs
-          I started this project in January 2025 with colleagues in Amphion & Quwan Technology Joint Laboratory. I'm responsible for making precise timestamps and conduct experimental work.
+            This project was initiated in January 2025 in collaboration with colleagues from the Amphion & Quwan Technology Joint Laboratory. The dataset is designed to facilitate the training of speech synthesis models that can generate human-like non-verbal vocalizations, such as laughter, sighs, and other expressive sounds.
+          
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any 
                       # other value (or no value) means no border will be displayed
@@ -66,9 +68,13 @@ content:
         link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
 
         quote: >
-          This is the project led by myself on the course EIE3280, we use the latests AI technologies to build a system that can help novice academic researchers to Find-Summarize-Retrieval papers.
-        description: | # this will include new lines to allow paragraphs
-          In this project, I led my teammates to find the shortcomings of current academic searching engines and the classical RAG system, I proposed the new method and split the work to my teammates. I'm responsible for the backend development, including the model finetuing and integration of MCP, LLM and the Database system.
+          This project was developed as part of the course EIE3280, where I served as the team leader. We leveraged the latest AI technologies to build a system that helps novice academic researchers with paper **finding**, **summarization**, and **retrieval**.
+
+        description: |
+          We critically analyzed the limitations of current academic search engines and conventional RAG systems.  
+          I proposed an improved architecture and coordinated the division of tasks among team members.  
+          My role focused on backend development, including model fine-tuning, and the integration of MCP, large language models (LLMs), and database systems to ensure seamless functionality.
+
   - title: Experience
     layout: list
     content:
@@ -79,9 +85,10 @@ content:
         link: https://github.com/open-mmlab/Amphion/tree/main
         link_text: '<i class="fab fa-github"></i> Amphion GitHub Page'
         quote: >
-          Amphion is the lab led by Prof. WU Zhizheng, focusing on the research of AI Audio, Music, and Speech Generation.
-        description: | # this will include new lines to allow paragraphs
-          During this period, I have been working on the NVspeech project, and learnt the latest research in the field of Text-to-Speech & Text-to-Audio. 
+          Amphion is the lab led by Prof. Zhizheng Wu, focusing on the research of AI Audio, Music, and Speech Generation.
+        description: |
+          As a research assistant in the Amphion Lab, I contributed to the **NVspeech** project and explored state-of-the-art methods in **Text-to-Speech** and **Text-to-Audio** generation. This experience deepened my understanding of speech synthesis pipelines and the latest advancements in generative audio technologies.
+
 
   - title: Tech Stack
     layout: text
