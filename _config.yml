@@ -1,0 +1,123 @@
+# Site
+repository: Git repository where your resume will be hosted, only required if you are hosting on GitHub (eg. sproogen/modern-resume-theme)
+# favicon: Directory of your favicon (eg. images/favicon.ico)(optional)
+
+# Content configuration version
+version: 2
+
+# Personal info
+name: 陆奕衡  Yiheng Lu
+title: CUHKSZ UG'27
+email: 123090391@link.cuhk.edu.cn
+# email_title: Email (Email title override)
+# phone: Your phone number (optional)
+# phone_title: Phone (Phone title override)
+# website: Your website (eg. https://google.com)(optional)
+# website_title: Web (Website title override)
+
+# Dark Mode (true/false/never)
+darkmode: false
+
+# Social links
+github_username:  IS-FIELD
+Huggingface_username: IsField
+
+# - title: another link
+#   icon: font awesome brand icon name (eg. fab fa-twitter) (https://fontawesome.com/icons?d=gallery&s=brands&m=free)
+#   url: Link url (eg. https://google.com)
+
+# Google Analytics and Tag Manager
+# Using more than one of these may cause issues with reporting
+# gtm: "GTM-0000000"
+# gtag: "UA-00000000-0"
+# google_analytics: "UA-00000000-0"
+
+# About Section
+# about_title: About Me (Use this to override about section title)
+about_profile_image: images/profile.jpg
+about_content: | # this will include new lines to allow paragraphs
+  Hi I'm Yiheng Lu, a Music lover, Gym bro, also an Aspiring AI researcher. 
+  I'm a 3rd Year Undergraduate student at The Chinese University of Hong Kong, Shenzhen, majoring in Electric Engineering. 
+  My experience lies in Deep Learning & Signal Processing, and I have a strong interest in the field of Swarm Intelligence, Robotics and Networking.
+
+
+
+content:
+  - title: Projects # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: PaperHelper
+        # icon: fas cloud
+        link: https://github.com/IS-FIELD/PaperHelper
+        link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
+  
+        quote: >
+          In this project, I led my team to leverage the latest AI technologies to build a system that helps novice academic researchers with paper finding, summarization, and retrieval.
+
+        description: |
+          We critically analyzed the limitations of current academic search engines and conventional RAG systems.  
+          I proposed an improved architecture and coordinated the division of tasks among team members.  
+          My role focused on backend development, including model fine-tuning, and the integration of MCP, large language models (LLMs), and database systems to ensure seamless functionality.
+
+  - title: Experience
+    layout: list
+    content:
+      - layout: left
+        title: Amphion
+        sub_title: Research Assistant
+        caption: October 2024 - Present
+        link: https://github.com/open-mmlab/Amphion/tree/main
+        link_text: '<i class="fab fa-github"></i> Amphion GitHub Page'
+        quote: >
+          Amphion is the lab led by <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">Prof. Zhizheng Wu</a></b>, focusing on the research of AI Audio, Music, and Speech Generation.
+        description: |
+          As a research assistant in the Amphion Lab, I explored state-of-the-art methods in **Text-to-Speech** and **Text-to-Audio** generation. This experience deepened my understanding of speech synthesis pipelines and the latest advancements in generative audio technologies.
+
+      - layout: left
+        title: NCEL
+        sub_title: Research Assistant
+        caption: May 2025 - Present
+        link: https://ncel.cuhk.edu.cn/
+        link_text: '<i class="fas fa-cloud"></i> NCEL website'
+        quote: >
+          Network Communications and Economics Lab (NCEL) is the lab led by <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">Prof. Jianwei Huang</a></b>, focusing on the research of Network Economics, Wireless Communications, swarm Intelligence and Smart Grid.
+        description: |
+          As a research assistant in the NCEL, I contributed to the Smart Grid project collaborated with Guangdong Power Grid. This project aims to develop a smart grid system that can predict the electric price through the analysis of historical data and real-time information.
+
+
+  - title: Tech Stack
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - Languages: Python, PyTorch, HTML, Bash, VHDL
+      - Tools: Linux, Git&GitHub, Docker, Huggingface, Slurm, Vivado, MultiSim
+      - Experience: Deep Learning, Signal Processing & System, Digital Circuit Design
+# Footer
+footer_show_references: false
+# references_title: References on request (Override references text)
+
+# Build settings
+# theme: modern-resume-theme (Use this is you are hosting your resume yourself)
+# remote_theme: sproogen/modern-resume-theme (Use this if you are hosting your resume on GitHub)
+
+sass:
+  sass_dir: _sass
+  style: compressed
+# 添加自定义CSS
+# custom_css: assets/css/custom.css
+ - jekyll-seo-tag
+
+exclude : [
+  "Gemfile",
+  "Gemfile.lock",
+  "node_modules",
+  "vendor/bundle/",
+  "vendor/cache/",
+  "vendor/gems/",
+  "vendor/ruby/",
+  "lib/",
+  "scripts/",
+  "docker-compose.yml",
+  ]
