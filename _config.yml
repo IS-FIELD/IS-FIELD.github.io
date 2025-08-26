@@ -62,6 +62,20 @@ content:
           I proposed an improved architecture and coordinated the division of tasks among team members.  
           My role focused on backend development, including model fine-tuning, and the integration of MCP, large language models (LLMs), and database systems to ensure seamless functionality.
 
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: HyCoSeg
+        # icon: fas cloud
+        link: https://github.com/IS-FIELD/HyCoSeg
+        link_text: '<i class="fab fa-github"></i> Manual and Deep Learning Hybrid Approach for COVID-19 Lung Lesion Segmentation'
+  
+        quote: >
+          In this project, I led my team to present a hybrid method for segmenting lung lesions in COVID-19 CT scans. It combines classical image processing with deep learning to detect 3 common lesion types.
+
+        description: |
+          HyCoSeg is a hybrid pipeline that integrates classical image processing with deep learning for the segmentation of COVID-19 lung lesions in CT scans. The lung regions are first delineated with a 2D U-Net (LungMask) to constrain subsequent detection. Ground-glass opacities are segmented through Hounsfield Unit thresholding combined with morphological post-processing, while consolidation is identified using a coarse-to-fine deep model enhanced by Gabor texture filtering. Pleural effusion is extracted by boundary-aware density thresholding followed by connected-component analysis.
+
   - title: Experience
     layout: list
     content:
