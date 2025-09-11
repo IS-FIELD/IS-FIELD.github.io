@@ -43,6 +43,28 @@ about_content: | # this will include new lines to allow paragraphs
 
 
 content:
+  - title: Publications # Title for the section
+    layout: list # Type of content section (list/text)
+    content:
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: NVSpeech
+        # icon: fas cloud
+        link: https://arxiv.org/abs/2508.04195
+        link_text: <i class="ai ai-arxiv"></i> An Integrated and Scalable Pipeline for Human-Like Speech Modeling with Paralinguistic Vocalizations
+
+  
+        quote: >
+          I contributed to advancing filler-word recognition and prosody-aware speech processing through feature engineering, dataset evaluation, and data preparation for synthesis.
+
+        description: |
+          I proposed a timestamp-based filler and prosody feature extraction method leveraging WhisperX, FunAudio, and Whisper-timestamped to improve recognition accuracy.  
+          I further conducted cross-dataset evaluation on Emilia and EARS MM_TTS, validating robustness across English long-form audio and daily conversations.  
+          Additionally, I generated over 100 text slices per filler label to support TTS synthesis and evaluation, and designed the NVSpeech project homepage to present the system architecture, demos, and datasets.
+
+
+
   - title: Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -55,7 +77,7 @@ content:
         link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
   
         quote: >
-          In this project, I led my team to leverage the latest AI technologies to build a system that helps novice academic researchers with paper finding, summarization, and retrieval.
+          I led my team to leverage the latest AI technologies to build a system that helps novice academic researchers with paper finding, summarization, and retrieval.
 
         description: |
           We critically analyzed the limitations of current academic search engines and conventional RAG systems.  
@@ -71,7 +93,7 @@ content:
         link_text: '<i class="fab fa-github"></i> Manual and Deep Learning Hybrid Approach for COVID-19 Lung Lesion Segmentation'
   
         quote: >
-          In this project, I led my team to present a hybrid method for segmenting lung lesions in COVID-19 CT scans. It combines classical image processing with deep learning to detect 3 common lesion types.
+          I led my team to present a hybrid method for segmenting lung lesions in COVID-19 CT scans. It combines classical image processing with deep learning to detect 3 common lesion types.
 
         description: |
           HyCoSeg is a hybrid pipeline that integrates classical image processing with deep learning for the segmentation of COVID-19 lung lesions in CT scans. The lung regions are first delineated with a 2D U-Net (LungMask) to constrain subsequent detection. Ground-glass opacities are segmented through Hounsfield Unit thresholding combined with morphological post-processing, while consolidation is identified using a coarse-to-fine deep model enhanced by Gabor texture filtering. Pleural effusion is extracted by boundary-aware density thresholding followed by connected-component analysis.
@@ -88,7 +110,7 @@ content:
         quote: >
           Amphion is the lab led by <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">Prof. Zhizheng Wu</a></b>, focusing on the research of AI Audio, Music, and Speech Generation.
         description: |
-          As a research assistant in the Amphion Lab, I explored state-of-the-art methods in **Text-to-Speech** and **Text-to-Audio** generation. This experience deepened my understanding of speech synthesis pipelines and the latest advancements in generative audio technologies.
+          As a research assistant in the Amphion Lab, I contributed to NVSpeech and explored state-of-the-art methods in **Text-to-Speech** and **Text-to-Audio** generation. This experience deepened my understanding of speech synthesis pipelines and the latest advancements in generative audio technologies.
 
       - layout: left
         title: NCEL
