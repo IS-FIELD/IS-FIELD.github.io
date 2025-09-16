@@ -34,10 +34,12 @@ Huggingface_username: IsField
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/Photo3.png
+about_profile_image: images/Photo4.png
 about_content: | # this will include new lines to allow paragraphs
   Hi I'm Yiheng Lu, a Music lover, Gym bro, also an Aspiring AI researcher. 
+
   I'm a 3rd Year Undergraduate student at The Chinese University of Hong Kong, Shenzhen, majoring in Electric Engineering. 
+  
   My experience lies in Deep Learning & Signal Processing, and I have a strong interest in the field of Swarm Intelligence, Robotics and Networking.
 
 
