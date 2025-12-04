@@ -128,15 +128,15 @@ content:
   - title: Recent Awards
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - Dean List in School of Science and Engineering(2024--2025): In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year.
-      - Undergraduate Research Awards: The Undergraduate Research Awards (URA) program is designed to encourage undergraduate students to engage in independent, faculty-guided research projects, and to explore their academic interests beyond classroom learning. Only individual projects will be eligible for funding.
+      - <b>Dean List in School of Science and Engineering(2024--2025)</b>: In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year.
+      - <b>Undergraduate Research Awards</b>: The Undergraduate Research Awards (URA) program is designed to encourage undergraduate students to engage in independent, faculty-guided research projects, and to explore their academic interests beyond classroom learning. Only individual projects will be eligible for funding.
 
   - title: Tech Stack
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - Languages: Python, PyTorch, HTML, Bash, VHDL
-      - Tools: Linux, Git&GitHub, Docker, Huggingface, Slurm, Vivado, MultiSim
-      - Experience: Deep Learning, Signal Processing & System, Digital Circuit Design
+      - <b>Languages</b>: Python, PyTorch, HTML, Bash, VHDL
+      - <b>Tools</b>: Linux, Git&GitHub, Docker, Huggingface, Slurm, Vivado, MultiSim
+      - <b>Experience</b>: Deep Learning, Signal Processing & System, Digital Circuit Design
 # Footer
 footer_show_references: false
 # references_title: References on request (Override references text)
