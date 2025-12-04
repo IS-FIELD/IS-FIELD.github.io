@@ -67,7 +67,7 @@ content:
 
 
 
-  - title: Projects # Title for the section
+  - title: Selected Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
       - layout: left
@@ -100,7 +100,7 @@ content:
         description: |
           HyCoSeg is a hybrid pipeline that integrates classical image processing with deep learning for the segmentation of COVID-19 lung lesions in CT scans. The lung regions are first delineated with a 2D U-Net (LungMask) to constrain subsequent detection. Ground-glass opacities are segmented through Hounsfield Unit thresholding combined with morphological post-processing, while consolidation is identified using a coarse-to-fine deep model enhanced by Gabor texture filtering. Pleural effusion is extracted by boundary-aware density thresholding followed by connected-component analysis.
 
-  - title: Experience
+  - title: Research Experience
     layout: list
     content:
       - layout: left
@@ -125,6 +125,11 @@ content:
         description: |
           As a research assistant in the NCEL, I contributed to the Smart Grid project collaborated with Guangdong Power Grid. This project aims to develop a smart grid system that can predict the electric price through the analysis of historical data and real-time information.
 
+  - title: Recent Awards
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - Dean List in School of Science and Engineering(2024--2025): In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year.
+      - Undergraduate Research Awards: The Undergraduate Research Awards (URA) program is designed to encourage undergraduate students to engage in independent, faculty-guided research projects, and to explore their academic interests beyond classroom learning. Only individual projects will be eligible for funding.
 
   - title: Tech Stack
     layout: text
