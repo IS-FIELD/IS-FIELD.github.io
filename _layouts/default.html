@@ -1,9 +1,14 @@
+{% assign zh = site.data.i18n.zh %}
+{% capture default_page_title %}{{ site.name }} | {{ site.title }}{% endcapture %}
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: 'en' }}">
+<html
+  lang="{{ page.lang | default: site.lang | default: 'en' }}"
+  data-title-en="{{ default_page_title | strip | escape }}"
+  data-title-zh="{{ zh.page.title | default: default_page_title | strip | escape }}">
 
 {%- include head.html -%}
 
-<body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}">
+<body class="{% if site.darkmode == true and site.darkmode != 'never' %}dark{% endif %}" data-language="en">
 
   {%- include header.html -%}
 
@@ -18,9 +23,13 @@
 
       {%- if site.version == 2 -%}
         {% for section in site.content %}
+          {% assign zh_section = zh.content[forloop.index0] %}
           <div class="container {{ section.layout }}-container">
-            <h3 id="{{ section.title | slugify }}">{{ section.title }}</h3>
-            {% include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content %}
+            <h3 id="{{ section.title | slugify }}">
+              <span class="lang lang-inline lang-en">{{ section.title }}</span>
+              <span class="lang lang-inline lang-zh">{{ zh_section.title | default: section.title }}</span>
+            </h3>
+            {% include {{ section.layout | prepend: "section-" | append: ".html" }} content=section.content zh_content=zh_section.content %}
           </div>
         {% endfor %}
       {% else %}
@@ -30,9 +39,7 @@
   </main>
 
   {%- include footer.html -%}
-  {% if site.darkmode == false %}
-    <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
-  {% endif %}
+  <script src="{{ '/assets/js/index.js' | relative_url }}"></script>
 </body>
 
 </html>

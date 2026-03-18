@@ -1,0 +1,89 @@
+page:
+  title: "陆奕衡 Yiheng Lu | 香港中文大学（深圳）2027届本科生 | 电子工程&音乐专业"
+
+header:
+  name: "陆奕衡 Yiheng Lu"
+  title: "香港中文大学（深圳）2027届本科生 | 电子工程&音乐专业"
+  email_title: "邮箱"
+  phone_title: "电话"
+  website_title: "网站"
+  toggle_to_zh: "切换到中文"
+  toggle_to_en: "Switch to English"
+
+about:
+  title: "关于我"
+  content: |
+    你好！我是陆奕衡，香港中文大学（深圳）计算机与电子工程专业大三学生，辅修音乐专业
+    我当前的研究方向是人工智能符号音乐生成
+
+content:
+  - title: "发表成果"
+    content:
+      - title: "NVSpeech"
+        link_text: '<i class="ai ai-arxiv"></i> 面向副语言发声的人类式语音建模一体化可扩展流程'
+        quote: >
+          我参与了副语言识别与韵律感知语音处理的推进工作，负责特征工程、数据集评测，以及语音合成所需的数据准备。
+        description: |
+          我提出了一种基于时间戳的副语言与韵律特征提取方法，结合 WhisperX、FunAudio 和 Whisper-timestamped 来提升识别精度。  
+          我还在 Emilia 和 EARS MM_TTS 上开展了跨数据集评测，验证了该方法在英文长音频与日常对话场景中的鲁棒性。  
+          此外，我为每类副语言生成了 100 余条文本切片，用于 TTS 合成与评测，并设计了 NVSpeech 项目主页以展示系统架构、演示与数据集。
+
+  - title: "项目经历"
+    content:
+      - title: "PaperHelper"
+        link_text: '<i class="fab fa-github"></i> 面向科研新手的智能文献检索整合系统'
+        quote: >
+          我带领团队以深度学习算法构建了一个帮助科研新手进行论文检索、总结与信息获取的系统。
+        description: |
+          我们系统分析了现有学术搜索引擎与传统 RAG 系统的局限。  
+          我提出了改进后的系统架构，并协调团队成员进行任务分工。  
+          我主要负责后端开发，包括模型微调，以及 MCP、大语言模型（LLMs）与数据库系统的集成，以确保系统整体协同与稳定运行。
+
+      - title: "HyCoSeg"
+        link_text: '<i class="fab fa-github"></i> 基于人工与深度学习融合的 COVID-19 肺部病灶分割系统'
+        quote: >
+          我带领团队提出了一种用于 COVID-19 CT 肺部病灶分割的混合方法，将传统图像处理与深度学习结合，以检测 3 类常见病灶。
+        description: |
+          HyCoSeg 是一个将传统图像处理与深度学习结合的混合式流程，用于 COVID-19 CT 扫描中的肺部病灶分割。系统首先使用 2D U-Net（LungMask）勾勒肺部区域，以约束后续检测范围。随后，通过 Hounsfield Unit 阈值结合形态学后处理分割磨玻璃影；再利用结合 Gabor 纹理滤波的粗到细深度模型识别实变病灶；最后通过边界感知密度阈值与连通域分析提取胸腔积液。
+
+      - title: "FingerSense"
+        link_text: '<i class="fab fa-github"></i> 实时反馈的智能钢琴演奏手部动作分析系统'
+        quote: >
+          我开发了 FingerSense， 用深度学习方法将根据音频生成的标准钢琴演奏手部动作与学生的实际动作进行比较，将错误动作定位并返回智能建议。
+        description: |
+          FingerSense 以一段俯视钢琴练习视频作为输入，并将其拆分为同步对齐的音频与视频分支。  
+          系统使用 PianoMotion10M 从音频生成MANO 空间下的标准手部动作序列，同时借助 HaMeR 从视频重建 MANO 空间下的实际手部动作序列。  
+          随后，系统对两路动作流进行时序对齐，计算逐帧损失，用 LLM 分析损失并生成精确到秒的专业钢琴演奏手部动作纠正建议。
+
+  - title: "科研经历"
+    content:
+      - title: "Amphion"
+        sub_title: "研究助理"
+        caption: "2024年10月 - 至今"
+        link_text: '<i class="fab fa-github"></i> Amphion GitHub 页面'
+        quote: >
+          Amphion 是由 <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">吴智正教授</a></b> 领导的实验室，主要研究 AI 音频、音乐与语音生成。
+        description: |
+          作为 Amphion 实验室的研究助理，我参与了 NVSpeech 项目，并探索了 **文本到语音（Text-to-Speech）** 与 **文本到音频（Text-to-Audio）** 生成的前沿方法。  
+          这段经历加深了我对语音合成流程以及生成式音频最新进展的理解。
+
+      - title: "NCEL"
+        sub_title: "研究助理"
+        caption: "2025年5月 - 至今"
+        link_text: '<i class="fas fa-cloud"></i> NCEL 网站'
+        quote: >
+          网络通信与经济实验室（NCEL）由 <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">黄建伟教授</a></b> 领导，主要研究网络经济学、无线通信、群体智能与智能电网。
+        description: |
+          作为 NCEL 的研究助理，我参与了与广东电网合作的智能电网项目。  
+          该项目旨在通过分析历史数据与实时信息，构建能够预测电价的智能电网系统。
+
+  - title: "近期奖项"
+    content: |
+      - <b>2024至2025年度院长荣誉榜</b>：表彰 2024-25 学年本科阶段取得的整体学业优秀成绩。
+      - <b>第28,29,30届本科生科研奖</b>：本科生科研奖（URA）旨在鼓励本科生在导师指导下开展独立研究，探索课堂之外的学术兴趣。该资助仅面向个人项目。
+
+  - title: "技术栈"
+    content: |
+      - <b>语言</b>：Python, PyTorch, HTML, Bash, VHDL
+      - <b>工具</b>：Linux, Git&GitHub, Docker, Hugging Face, Slurm, Vivado, MultiSim
+      - <b>经验</b>：深度学习、信号与系统、数字电路设计

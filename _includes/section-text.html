@@ -1,5 +1,10 @@
 <div class="row clearfix">
   <div class="col-md-12">
-    {{ include.content | strip | markdownify }}
+    <div class="lang lang-block lang-en">
+      {{ include.content | strip | markdownify }}
+    </div>
+    <div class="lang lang-block lang-zh">
+      {{ include.zh_content | default: include.content | strip | markdownify }}
+    </div>
   </div>
 </div>

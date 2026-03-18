@@ -24,9 +24,79 @@ ul.icons a {
   color: #aaa;
 }
 
+.social-link {
+  display: flex !important;
+  align-items: center;
+  justify-content: center;
+}
+
+.social-link__icon {
+  width: 60%;
+  height: 60%;
+  display: block;
+  background-color: currentColor;
+  -webkit-mask-position: center;
+  -webkit-mask-repeat: no-repeat;
+  -webkit-mask-size: contain;
+  mask-position: center;
+  mask-repeat: no-repeat;
+  mask-size: contain;
+}
+
+.social-link__icon--github {
+  -webkit-mask-image: url("/images/github.svg");
+  mask-image: url("/images/github.svg");
+}
+
+.social-link__icon--huggingface {
+  -webkit-mask-image: url("/images/huggingface.svg");
+  mask-image: url("/images/huggingface.svg");
+}
+
+.icons .lang-toggle {
+  width: 2.75rem;
+  height: 2.75rem;
+  padding: 0;
+  margin: 0;
+  border: 0;
+  border-radius: 0;
+  background: none;
+  color: #333;
+  box-shadow: none;
+  line-height: 1;
+  vertical-align: middle;
+  transition: color 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.icons .lang-toggle:hover,
+.icons .lang-toggle:focus {
+  background: none;
+  color: #666;
+}
+
+.icons .lang-toggle i {
+  line-height: 1;
+}
+
 .icons i {
   font-size: 30px;
   line-height:60px;
+}
+
+.lang-zh {
+  display: none;
+}
+
+body[data-language="zh"] .lang-en {
+  display: none !important;
+}
+
+body[data-language="zh"] .lang-zh.lang-inline {
+  display: inline !important;
+}
+
+body[data-language="zh"] .lang-zh.lang-block {
+  display: block !important;
 }
 
 .icons {
@@ -49,6 +119,15 @@ ul.icons a {
   }
 
   .icons a:hover i {
+    color: #e6e6e6;
+  }
+
+  .icons .lang-toggle {
+    color: #222;
+  }
+
+  .icons .lang-toggle:hover,
+  .icons .lang-toggle:focus {
     color: #e6e6e6;
   }
 }

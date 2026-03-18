@@ -1,8 +1,15 @@
+{% assign zh = site.data.i18n.zh %}
 <div class="container header-container">
   <div class="row">
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-8 header-left">
-      <h1>{{ site.name | escape }}</h1>
-      <h2>{{ site.title | escape }}</h2>
+      <h1>
+        <span class="lang lang-inline lang-en">{{ site.name | escape }}</span>
+        <span class="lang lang-inline lang-zh">{{ zh.header.name | default: site.name | escape }}</span>
+      </h1>
+      <h2>
+        <span class="lang lang-inline lang-en">{{ site.title | escape }}</span>
+        <span class="lang lang-inline lang-zh">{{ zh.header.title | default: site.title | escape }}</span>
+      </h2>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
       <ul class="icons no-print">
@@ -29,24 +36,38 @@
         {%- endif -%}
         {%- if site.github_username -%}
           <li>
-            <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}" 
-            class="button button--sacnite button--round-l"
-            style="display: flex; align-items: center; justify-content: center;">
-            <img src="/images/github.svg" alt="Github"
-                  style="width: 60%; height: 60%; object-fit: contain; filter: brightness(0) invert(1)" />
+            <a target="_blank" href="https://github.com/{{ site.github_username| cgi_escape | escape }}"
+            class="button button--sacnite button--round-l social-link"
+            aria-label="GitHub">
+              <span class="social-link__icon social-link__icon--github" aria-hidden="true"></span>
             </a>
           </li>
         {%- endif -%}
         {%- if site.Huggingface_username -%}
         <li>
           <a target="_blank" href="https://huggingface.co/{{ site.Huggingface_username | cgi_escape | escape }}"
-             class="button button--sacnite button--round-l"
-             style="display: flex; align-items: center; justify-content: center;">
-            <img src="/images/huggingface-color.svg" alt="Hugging Face"
-                 style="width: 60%; height: 60%; object-fit: contain;" />
+             class="button button--sacnite button--round-l social-link"
+             aria-label="Hugging Face">
+            <span class="social-link__icon social-link__icon--huggingface" aria-hidden="true"></span>
           </a>
         </li>
         {%- endif -%}
+        <li>
+          <button
+            type="button"
+            class="lang-toggle"
+            data-lang-toggle
+            data-label-en="{{ zh.header.toggle_to_zh | default: '切换到中文' | escape }}"
+            data-label-zh="{{ zh.header.toggle_to_en | default: 'Switch to English' | escape }}"
+            aria-label="{{ zh.header.toggle_to_zh | default: '切换到中文' | escape }}"
+            title="{{ zh.header.toggle_to_zh | default: '切换到中文' | escape }}">
+            <i class="fa-solid fa-language" aria-hidden="true"></i>
+            <span class="sr-only">
+              <span class="lang lang-inline lang-en">{{ zh.header.toggle_to_zh | default: '切换到中文' }}</span>
+              <span class="lang lang-inline lang-zh">{{ zh.header.toggle_to_en | default: 'Switch to English' }}</span>
+            </span>
+          </button>
+        </li>
         {%- if site.stackoverflow_username -%}
           <li>
             <a target="_blank" href="https://stackoverflow.com/users/{{ site.stackoverflow_username| cgi_escape | escape }}" class="button button--sacnite button--round-l">
@@ -121,17 +142,20 @@
 
       {%- if site.email -%}
         <p>
-          {{ site.email_title | default: "Email" }}: <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
+          <span class="lang lang-inline lang-en">{{ site.email_title | default: "Email" }}</span>
+          <span class="lang lang-inline lang-zh">{{ zh.header.email_title | default: "邮箱" }}</span>: <a href="mailto:{{ site.email }}" target="_blank">{{ site.email | escape }}</a>
         </p>
       {%- endif -%}
       {%- if site.phone -%}
         <p>
-          {{ site.phone_title | default: "Phone" }}: {{ site.phone | escape }}
+          <span class="lang lang-inline lang-en">{{ site.phone_title | default: "Phone" }}</span>
+          <span class="lang lang-inline lang-zh">{{ zh.header.phone_title | default: "电话" }}</span>: {{ site.phone | escape }}
         </p>
       {%- endif -%}
       {%- if site.website -%}
         <p>
-          {{ site.website_title | default: "Web" }}: {% include a.html href=site.website %}{{ site.website | escape }}</a>
+          <span class="lang lang-inline lang-en">{{ site.website_title | default: "Web" }}</span>
+          <span class="lang lang-inline lang-zh">{{ zh.header.website_title | default: "网站" }}</span>: {% include a.html href=site.website %}{{ site.website | escape }}</a>
         </p>
       {%- endif -%}
     </div>

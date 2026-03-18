@@ -1,13 +1,35 @@
+{% assign zh_items = include.zh_content | default: empty %}
 {% for item in include.content %}
+  {% assign zh_item = zh_items[forloop.index0] %}
   <div class="row clearfix layout layout-{{item.layout | default: 'left'}} border-{{item.border | default: 'no'}}">
     <div class="col-xs-12 col-sm-4 col-md-3 col-print-12 details">
-      <h4 id="{{ item.title | slugify }}">{{ item.title }}</h4>
-      {%- if item.sub_title -%}<p><b>{{ item.sub_title }}</b></p>{%- endif -%}
-      {%- if item.caption -%}<p>{{ item.caption }}</p>{%- endif -%}
+      <h4 id="{{ item.title | slugify }}">
+        <span class="lang lang-inline lang-en">{{ item.title }}</span>
+        <span class="lang lang-inline lang-zh">{{ zh_item.title | default: item.title }}</span>
+      </h4>
+      {%- if item.sub_title -%}
+        <p>
+          <b>
+            <span class="lang lang-inline lang-en">{{ item.sub_title }}</span>
+            <span class="lang lang-inline lang-zh">{{ zh_item.sub_title | default: item.sub_title }}</span>
+          </b>
+        </p>
+      {%- endif -%}
+      {%- if item.caption -%}
+        <p>
+          <span class="lang lang-inline lang-en">{{ item.caption }}</span>
+          <span class="lang lang-inline lang-zh">{{ zh_item.caption | default: item.caption }}</span>
+        </p>
+      {%- endif -%}
 
       {%- if item.link -%}
         {% include a.html href=item.link class="link" %}
-          {%- if item.link_text -%}{{ item.link_text }}{%- else -%}{{ item.link }}{%- endif -%}
+          <span class="lang lang-inline lang-en">
+            {%- if item.link_text -%}{{ item.link_text }}{%- else -%}{{ item.link }}{%- endif -%}
+          </span>
+          <span class="lang lang-inline lang-zh">
+            {%- if zh_item.link_text -%}{{ zh_item.link_text }}{%- elsif item.link_text -%}{{ item.link_text }}{%- else -%}{{ item.link }}{%- endif -%}
+          </span>
         </a>
       {%- endif -%}
 
@@ -21,9 +43,17 @@
     </div>
     <div class="col-xs-12 col-sm-8 col-md-9 col-print-12 content">
       {%- if item.quote -%}
-        <p class="quote">{{ item.quote }}</p>
+        <p class="quote">
+          <span class="lang lang-inline lang-en">{{ item.quote }}</span>
+          <span class="lang lang-inline lang-zh">{{ zh_item.quote | default: item.quote }}</span>
+        </p>
       {%- endif -%}
-      {{ item.description | strip | markdownify }}
+      <div class="lang lang-block lang-en">
+        {{ item.description | strip | markdownify }}
+      </div>
+      <div class="lang lang-block lang-zh">
+        {{ zh_item.description | default: item.description | strip | markdownify }}
+      </div>
     </div>
   </div>
 {% endfor %}
