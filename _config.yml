@@ -34,7 +34,7 @@ Huggingface_username: IsField
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/Photo6.png
+about_profile_image: images/Photo7.jpg
 about_content: | # this will include new lines to allow paragraphs
   Hi I'm Yiheng Lu, a Music lover, Gym bro, also an Aspiring AI researcher. 
 
