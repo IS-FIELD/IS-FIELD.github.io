@@ -70,21 +70,6 @@ content:
   - title: Selected Projects # Title for the section
     layout: list # Type of content section (list/text)
     content:
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any
-                      # other value (or no value) means no border will be displayed
-        title: PaperHelper
-        # icon: fas cloud
-        link: https://github.com/IS-FIELD/PaperHelper
-        link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
-  
-        quote: >
-          I led my team to leverage the latest AI technologies to build a system that helps novice academic researchers with paper finding, summarization, and retrieval.
-
-        description: |
-          We critically analyzed the limitations of current academic search engines and conventional RAG systems.  
-          I proposed an improved architecture and coordinated the division of tasks among team members.  
-          My role focused on backend development, including model fine-tuning, and the integration of MCP, large language models (LLMs), and database systems to ensure seamless functionality.
 
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any
@@ -116,6 +101,21 @@ content:
           The system uses PianoMotion10M to generate a standard hand-motion sequence from the audio, and reconstructs the observed MANO-space gesture sequence from video with HaMeR.  
           It then aligns the two motion streams, computes frame-level losses, and packages the evidence into an LLM-ready report that can be converted into professional advice precise to the second.
 
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: PaperHelper
+        # icon: fas cloud
+        link: https://github.com/IS-FIELD/PaperHelper
+        link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
+  
+        quote: >
+          I led my team to leverage the latest AI technologies to build a system that helps novice academic researchers with paper finding, summarization, and retrieval.
+
+        description: |
+          We critically analyzed the limitations of current academic search engines and conventional RAG systems.  
+          I proposed an improved architecture and coordinated the division of tasks among team members.  
+          My role focused on backend development, including model fine-tuning, and the integration of MCP, large language models (LLMs), and database systems to ensure seamless functionality.
   - title: Research Experience
     layout: list
     content:
@@ -145,7 +145,7 @@ content:
     layout: text
     content: | # this will include new lines to allow paragraphs
       - <b>Dean List in School of Science and Engineering(2024--2025)</b>: In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year.
-      - <b>Undergraduate Research Awards</b>: The Undergraduate Research Awards (URA) program is designed to encourage undergraduate students to engage in independent, faculty-guided research projects, and to explore their academic interests beyond classroom learning. Only individual projects will be eligible for funding.
+      - <b> 28,29,30th Undergraduate Research Awards</b>: The Undergraduate Research Awards (URA) program is designed to encourage undergraduate students to engage in independent, faculty-guided research projects, and to explore their academic interests beyond classroom learning. Only individual projects will be eligible for funding.
 
   - title: Tech Stack
     layout: text
