@@ -7,7 +7,9 @@ version: 2
 
 # Personal info
 name: 陆奕衡  Yiheng Lu
-title: CUHKSZ UG'27 | ECE & Music
+title: |-
+  CUHKSZ UG'27
+  Electrical and Computer Engineering & Music
 email: 123090391@link.cuhk.edu.cn
 # email_title: Email (Email title override)
 # phone: Your phone number (optional)

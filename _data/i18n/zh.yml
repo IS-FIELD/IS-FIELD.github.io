@@ -3,7 +3,9 @@ page:
 
 header:
   name: "陆奕衡 Yiheng Lu"
-  title: "香港中文大学（深圳）2027届本科生 | 电子工程&音乐专业"
+  title: |-
+    香港中文大学（深圳）2027届本科生
+    电子工程&音乐专业
   email_title: "邮箱"
   phone_title: "电话"
   website_title: "网站"
@@ -70,8 +72,7 @@ content:
         quote: >
           网络通信与经济实验室（NCEL）由 <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">黄建伟教授</a></b> 领导，主要研究网络经济学、无线通信、群体智能与智能电网。
         description: |
-          作为 NCEL 的研究助理，我参与了与广东电网合作的智能电网项目。  
-          该项目旨在通过分析历史数据与实时信息，构建能够预测电价的智能电网系统。
+          作为 NCEL 的研究助理，我参与了与广东电网合作的智能电网项目。该项目旨在通过分析历史数据与实时信息，构建能够预测电价的智能电网系统。
 
   - title: "近期奖项"
     content: |

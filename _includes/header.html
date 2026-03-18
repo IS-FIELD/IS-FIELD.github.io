@@ -7,8 +7,8 @@
         <span class="lang lang-inline lang-zh">{{ zh.header.name | default: site.name | escape }}</span>
       </h1>
       <h2>
-        <span class="lang lang-inline lang-en">{{ site.title | escape }}</span>
-        <span class="lang lang-inline lang-zh">{{ zh.header.title | default: site.title | escape }}</span>
+        <span class="lang lang-inline lang-en">{{ site.title | escape | newline_to_br }}</span>
+        <span class="lang lang-inline lang-zh">{{ zh.header.title | default: site.title | escape | newline_to_br }}</span>
       </h2>
     </div>
     <div class="col-xs-12 col-sm-6 col-md-6 col-lg-4 header-right">
