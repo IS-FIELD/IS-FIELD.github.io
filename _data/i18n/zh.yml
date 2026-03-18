@@ -25,9 +25,7 @@ content:
         quote: >
           我参与了副语言识别与韵律感知语音处理的推进工作，负责特征工程、数据集评测，以及语音合成所需的数据准备。
         description: |
-          我提出了一种基于时间戳的副语言与韵律特征提取方法，结合 WhisperX、FunAudio 和 Whisper-timestamped 来提升识别精度。  
-          我还在 Emilia 和 EARS MM_TTS 上开展了跨数据集评测，验证了该方法在英文长音频与日常对话场景中的鲁棒性。  
-          此外，我为每类副语言生成了 100 余条文本切片，用于 TTS 合成与评测，并设计了 NVSpeech 项目主页以展示系统架构、演示与数据集。
+          我提出了一种基于时间戳的副语言与韵律特征提取方法，结合 WhisperX、FunAudio 和 Whisper-timestamped 来提升识别精度。我在 Emilia 和 EARS MM_TTS 上开展了跨数据集评测，验证了该方法在英文长音频与日常对话场景中的鲁棒性。此外，我为每类副语言生成了 100 余条文本切片，用于 TTS 合成与评测，并设计了 NVSpeech 项目主页以展示系统架构、演示与数据集。
 
   - title: "项目经历"
     content:

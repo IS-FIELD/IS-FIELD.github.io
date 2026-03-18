@@ -61,9 +61,7 @@ content:
           I contributed to advancing filler-word recognition and prosody-aware speech processing through feature engineering, dataset evaluation, and data preparation for synthesis.
 
         description: |
-          I proposed a timestamp-based filler and prosody feature extraction method leveraging WhisperX, FunAudio, and Whisper-timestamped to improve recognition accuracy.  
-          I further conducted cross-dataset evaluation on Emilia and EARS MM_TTS, validating robustness across English long-form audio and daily conversations.  
-          Additionally, I generated over 100 text slices per filler label to support TTS synthesis and evaluation, and designed the NVSpeech project homepage to present the system architecture, demos, and datasets.
+          I proposed a timestamp-based filler and prosody feature extraction method leveraging WhisperX, FunAudio, and Whisper-timestamped to improve recognition accuracy. I further conducted cross-dataset evaluation on Emilia and EARS MM_TTS, validating robustness across English long-form audio and daily conversations. Additionally, I generated over 100 text slices per filler label to support TTS synthesis and evaluation, and designed the NVSpeech project homepage to present the system architecture, demos, and datasets.
 
 
 
