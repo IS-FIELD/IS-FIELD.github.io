@@ -38,11 +38,12 @@ Huggingface_username: IsField
 # about_title: About Me (Use this to override about section title)
 about_profile_image: images/Photo7.jpg
 about_content: | # this will include new lines to allow paragraphs
-  Hi I'm Yiheng Lu, a Music lover, Gym bro, also an Aspiring AI researcher. 
 
-  I'm a 3rd Year Undergraduate student at The Chinese University of Hong Kong, Shenzhen, pursuing a B.Eng. in Electrical Engineering, with a minor in Music. 
+  Hi, I’m Yiheng Lu, a 3rd-year undergraduate at The Chinese University of Hong Kong, Shenzhen majoring in Electrical and Computer Engineering with a minor in Music, and I work at the intersection of generative AI and audio.
 
-  I'm currently working on AI Symbolic Music Generation.
+  I currently work as a Research Assistant in Amphion and NCEL, contributing to projects across speech modeling and smart-grid forecasting.
+  
+  My research interests span controllable generation (symbolic music generation, TTS/Text-to-Audio), paralinguistic vocalization modeling for more human-like speech, and multimodal alignment across audio–vision–motion for fine-grained feedback.
 
 
 
@@ -58,13 +59,34 @@ content:
         link: https://arxiv.org/abs/2508.04195
         link_text: <i class="ai ai-arxiv"></i> An Integrated and Scalable Pipeline for Human-Like Speech Modeling with Paralinguistic Vocalizations
 
-  
-        quote: >
-          I contributed to advancing filler-word recognition and prosody-aware speech processing through feature engineering, dataset evaluation, and data preparation for synthesis.
+
 
         description: |
-          I proposed a timestamp-based filler and prosody feature extraction method leveraging WhisperX, FunAudio, and Whisper-timestamped to improve recognition accuracy. I further conducted cross-dataset evaluation on Emilia and EARS MM_TTS, validating robustness across English long-form audio and daily conversations. Additionally, I generated over 100 text slices per filler label to support TTS synthesis and evaluation, and designed the NVSpeech project homepage to present the system architecture, demos, and datasets.
+          NVSpeech is an integrated pipeline for modeling human-like speech with paralinguistic vocalizations, bridging dataset construction, paralinguistic-aware ASR, and controllable TTS in a unified framework. In this project, I contributed to the recognition and synthesis side by developing timestamp-based filler and prosody feature extraction with WhisperX, FunAudio, and Whisper-timestamped, evaluating robustness across Emilia and EARS MM_TTS, generating over 100 text slices for each filler label to support synthesis and evaluation, and designing the project homepage to present the system architecture, demos, and datasets.
+        # quote: >
+        #   I contributed to advancing filler-word recognition and prosody-aware speech processing through feature engineering, dataset evaluation, and data preparation for synthesis.
 
+        # description: |
+        #   I proposed a timestamp-based filler and prosody feature extraction method leveraging WhisperX, FunAudio, and Whisper-timestamped to improve recognition accuracy. I further conducted cross-dataset evaluation on Emilia and EARS MM_TTS, validating robustness across English long-form audio and daily conversations. Additionally, I generated over 100 text slices per filler label to support TTS synthesis and evaluation, and designed the NVSpeech project homepage to present the system architecture, demos, and datasets.
+
+
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: E-Price
+        # icon: fas cloud
+        link_text: Event-aware Long-term Electricity Price Forecasting via Large Language Models (Manuscript under review)
+        description: |
+          This project studies long-term electricity price forecasting through a hybrid framework that combines structured trend modeling with event-aware reasoning over news, aiming to capture both stable market fundamentals and high-impact external shocks. I contributed to the event-data and forecasting pipeline by building time- and keyword-conditioned news retrieval workflows for GDELT, automating the conversion from LLM-generated search plans to executable queries, collecting official yearly price-driver data and forecasts from EIA-oriented sources, improving retrieval robustness against malformed outputs, rate limits, and overlong queries, and supporting later benchmark experiments that connect event-aware news signals with long-horizon forecasting evaluation.
+
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: SchenkerHnet
+        # icon: fas cloud
+        link_text: A Hierarchical and Theory-Guided Framework for Long-Range Symbolic Music (In Preparation)
+        description: |
+         SchenkerHnet is my independent research project on structure-aware symbolic music generation, which aims to bring Schenkerian hierarchy into AI models so that generated music reflects long-range tonal organization rather than only local token patterns. To build this system, I reconstructed large-scale classical piano corpora into theory-guided training data with harmonic, tonal, notes density, and structural annotations, redesigned the representation from coarse beat-level tokens to a cleaner tick-level JSONL format, and developed a hierarchical encoder–router–downsampler–main network–upsampler pipeline with Schenker-aware routing and long-memory modeling inspired by dynamic chunking network (Hnet) and Mamba. The project is currently being scaled to larger corpora for interpretable and structurally coherent long-form music generation.
 
 
   - title: Selected Projects # Title for the section

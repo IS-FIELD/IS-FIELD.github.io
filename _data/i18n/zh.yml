@@ -15,19 +15,51 @@ header:
 about:
   title: "关于我"
   content: |
-    你好！我是陆奕衡，香港中文大学（深圳）计算机与电子工程专业大三学生，辅修音乐专业
+    我是香港中文大学（深圳）电子与计算机工程专业2027届本科生，辅修音乐。从事生成式人工智能音频研究。
 
-    我当前的研究方向是人工智能符号音乐生成
+    我目前在 Amphion 与 NCEL 实验室参与AI音频与智能电网相关课题。
+
+    我关注AI符号音乐的可解释性生成，语音中的副语言发声建模，以及音视频多模态的对齐与评估。
+
+
+
 
 content:
   - title: "发表成果"
+    layout: list
     content:
-      - title: "NVSpeech"
+      - layout: left
+        border: weak
+        title: "NVSpeech"
         link_text: '<i class="ai ai-arxiv"></i> 面向副语言发声的人类式语音建模一体化可扩展流程'
-        quote: >
-          我参与了副语言识别与韵律感知语音处理的推进工作，负责特征工程、数据集评测，以及语音合成所需的数据准备。
         description: |
-          我提出了一种基于时间戳的副语言与韵律特征提取方法，结合 WhisperX、FunAudio 和 Whisper-timestamped 来提升识别精度。我在 Emilia 和 EARS MM_TTS 上开展了跨数据集评测，验证了该方法在英文长音频与日常对话场景中的鲁棒性。此外，我为每类副语言生成了 100 余条文本切片，用于 TTS 合成与评测，并设计了 NVSpeech 项目主页以展示系统架构、演示与数据集。
+          NVSpeech 是一个人声副语言数据集，围绕副语言发声现象，将数据集构建、具备副语言感知能力的语音识别，以及可控语音合成整合到同一框架中。在这个项目中，我主要参与了识别与合成相关部分：利用 WhisperX、FunAudio 和 Whisper-timestamped 设计了基于时间戳的 filler 与韵律特征提取流程，在 Emilia 和 EARS MM_TTS 上完成了跨数据集鲁棒性验证，并为每类 filler 生成了 100 条以上文本切片以支持合成与评测；此外，我还负责设计 NVSpeech 项目主页，用于展示系统架构、音频 demo 与数据资源。
+
+        # quote: >
+        #   我参与了副语言识别与韵律感知语音处理的推进工作，负责特征工程、数据集评测，以及语音合成所需的数据准备。
+        # description: |
+        #   我提出了一种基于时间戳的副语言与韵律特征提取方法，结合 WhisperX、FunAudio 和 Whisper-timestamped 来提升识别精度。我在 Emilia 和 EARS MM_TTS 上开展了跨数据集评测，验证了该方法在英文长音频与日常对话场景中的鲁棒性。此外，我为每类副语言生成了 100 余条文本切片，用于 TTS 合成与评测，并设计了 NVSpeech 项目主页以展示系统架构、演示与数据集。
+
+
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: E-Price
+        # icon: fas cloud
+        link_text: 基于大语言模型的事件驱动长期电力价格预测（论文在审）
+        description: |
+          这个项目聚焦于长期电价预测，核心思路是将电价趋势与基于大语言模型的新闻事件推理相结合，从而同时捕捉稳定的市场基本面与高影响力的外部冲击。我在其中主要参与了事件数据与预测流程的搭建：围绕 GDELT 实现了带时间与关键词约束的新闻检索流程，完成了从 LLM 生成搜索计划到可执行 query 的自动化转换，收集了面向 EIA 的官方年度 price driver 历史值与预测值，并针对输出格式异常、请求限流和 query 过长等问题优化了检索过程。
+
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: SchenkerHnet
+        # icon: fas cloud
+        link_text: 一种面向长程符号音乐生成的层级化与理论引导框架 (开发中)
+        description: |
+          SchenkerHnet 是我独立推进的结构化符号音乐生成项目，目标是把申克乐理分析中的层级结构真正引入现代 AI 模型，让生成结果学习到长程调性组织，而不只是局部音符模式。围绕这个目标，我首先把大规模古典钢琴语料重构为带有和声、调性、音符密度与结构标注的 theory-guided 训练数据，又将原先较粗糙的 beat-level 表示重构为更稳定的 tick-level JSONL 格式；在模型上，我进一步设计了 编码器,申克单元下采样模块, 主网络, 上采样 的层级框架，并结合 Mamba 式长记忆建模来学习深层结构。该项目目前正在向更大规模语料训练推进，以实现更可解释、结构更连贯的长篇符号音乐生成。
+
+
 
   - title: "项目经历"
     content:
