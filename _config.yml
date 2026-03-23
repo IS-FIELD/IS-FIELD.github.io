@@ -75,7 +75,7 @@ content:
                       # other value (or no value) means no border will be displayed
         title: E-Price
         # icon: fas cloud
-        link: #
+        link: https://is-field.github.io/
         link_text: Event-aware Long-term Electricity Price Forecasting via Large Language Models (Manuscript under review)
         description: |
           This project studies long-term electricity price forecasting through a hybrid framework that combines structured trend modeling with event-aware reasoning over news, aiming to capture both stable market fundamentals and high-impact external shocks. I contributed to the event-data and forecasting pipeline by building time- and keyword-conditioned news retrieval workflows for GDELT, automating the conversion from LLM-generated search plans to executable queries, collecting official yearly price-driver data and forecasts from EIA-oriented sources, improving retrieval robustness against malformed outputs, rate limits, and overlong queries, and supporting later benchmark experiments that connect event-aware news signals with long-horizon forecasting evaluation.
@@ -85,7 +85,7 @@ content:
                       # other value (or no value) means no border will be displayed
         title: SchenkerHnet
         # icon: fas cloud
-        link: #
+        link: https://is-field.github.io/
         link_text: A Hierarchical and Theory-Guided Framework for Long-Range Symbolic Music (In Preparation)
         description: |
          SchenkerHnet is my independent research project on structure-aware symbolic music generation, which aims to bring Schenkerian hierarchy into AI models so that generated music reflects long-range tonal organization rather than only local token patterns. To build this system, I reconstructed large-scale classical piano corpora into theory-guided training data with harmonic, tonal, notes density, and structural annotations, redesigned the representation from coarse beat-level tokens to a cleaner tick-level JSONL format, and developed a hierarchical encoder–router–downsampler–main network–upsampler pipeline with Schenker-aware routing and long-memory modeling inspired by dynamic chunking network (Hnet) and Mamba. The project is currently being scaled to larger corpora for interpretable and structurally coherent long-form music generation.
