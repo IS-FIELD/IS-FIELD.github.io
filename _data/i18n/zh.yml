@@ -1,5 +1,5 @@
 page:
-  title: "陆奕衡 Yiheng Lu | 香港中文大学（深圳）2027届本科生 | 电子工程&音乐专业"
+  title: "陆奕衡 Yiheng Lu | 香港中文大学（深圳）2027届本科生 | 电子与计算机工程&音乐专业"
 
 header:
   name: "陆奕衡 Yiheng Lu"
@@ -15,11 +15,11 @@ header:
 about:
   title: "关于我"
   content: |
-    我是香港中文大学（深圳）电子与计算机工程专业2027届本科生，辅修音乐。从事生成式人工智能音频研究。
+    我是香港中文大学（深圳）电子与计算机工程专业2027届本科生，辅修音乐。
+    
+    我目前在 Amphion 与 NCEL 实验室分别参与AI音频与智能电网相关课题。
 
-    我目前在 Amphion 与 NCEL 实验室参与AI音频与智能电网相关课题。
-
-    我关注AI符号音乐的可解释性生成，语音中的副语言发声建模，以及音视频多模态的对齐与评估。
+    我的研究方向集中在生成式人工智能音频，AI符号音乐的可解释性生成，语音中的副语言发声建模，以及音视频多模态的对齐与评估。
 
 
 
@@ -95,7 +95,7 @@ content:
         quote: >
           Amphion 是由 <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">武执政教授</a></b> 领导的实验室，主要研究 AI 音频、音乐与语音生成。
         description: |
-          作为 Amphion 实验室的研究助理，我参与了 NVSpeech 项目，并探索了 **文本到语音（Text-to-Speech）** 与 **文本到音频（Text-to-Audio）** 生成的前沿方法。这段经历加深了我对语音合成流程以及生成式音频最新进展的理解。
+          作为 Amphion 实验室的研究助理，我参与贡献了 NVSpeech 项目并独立推进了 SchenkerHnet 项目，在此过程中我探索了 **文本到语音（Text-to-Speech）** 与 **文本到音频（Text-to-Audio）** 生成的最新范式。
 
       - title: "NCEL"
         sub_title: "研究助理"
@@ -104,15 +104,15 @@ content:
         quote: >
           网络通信与经济实验室（NCEL）由 <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">黄建伟教授</a></b> 领导，主要研究网络经济学、无线通信、群体智能与智能电网。
         description: |
-          作为 NCEL 的研究助理，我参与了与广东电网合作的智能电网项目。该项目旨在通过分析历史数据与实时信息，构建能够预测电价的智能电网系统。
+          作为 NCEL 的研究助理，我参与了与广东电网合作的智能电网项目 E-Price 。该项目旨在通过LLM分析历史数据与实时信息，构建能够预测电价的智能电网系统。
 
   - title: "近期奖项"
     content: |
-      - <b>2024至2025年度院长荣誉榜</b>：表彰 2024-25 学年本科阶段取得的整体学业优秀成绩。
-      - <b>第28、29、30届本科生科研奖</b>：本科生科研奖（URA）旨在鼓励本科生在导师指导下开展独立研究，探索课堂之外的学术兴趣。该资助仅面向个人项目。
+      - <b>2024至2025年度院长荣誉榜</b>：表彰 2024-25 学年本科阶段取得的整体学业优秀成绩
+      - <b>第28、29、30届本科生科研奖</b>：资助本科生个人在导师指导下开展的独立研究工作
 
   - title: "技术栈"
     content: |
-      - <b>语言</b>：Python, PyTorch, HTML, Bash, VHDL
-      - <b>工具</b>：Linux, Git&GitHub, Docker, Hugging Face, Slurm, Vivado, MultiSim
-      - <b>经验</b>：深度学习、信号与系统、数字电路设计
+      - <b>编程语言</b>：Python, PyTorch, HTML, Bash, VHDL
+      - <b>开发工具</b>：Linux, Git&GitHub, Docker, Hugging Face, Slurm, Vivado, MultiSim
+      - <b>研究领域</b>：深度学习、信号与系统、数字电路设计

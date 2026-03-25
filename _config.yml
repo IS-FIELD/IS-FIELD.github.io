@@ -39,11 +39,11 @@ Huggingface_username: IsField
 about_profile_image: images/Photo7.jpg
 about_content: | # this will include new lines to allow paragraphs
 
-  Hi, I’m Yiheng Lu, a 3rd-year undergraduate at The Chinese University of Hong Kong, Shenzhen majoring in Electrical and Computer Engineering with a minor in Music, and I work at the intersection of generative AI and audio.
-
+  Hi, I’m Yiheng Lu, a 3rd-year undergraduate at The Chinese University of Hong Kong, Shenzhen majoring in Electrical and Computer Engineering with a minor in Music.
+  
   I currently work as a Research Assistant in Amphion and NCEL, contributing to projects across speech modeling and smart-grid forecasting.
   
-  My research interests span controllable generation (symbolic music generation, TTS/Text-to-Audio), paralinguistic vocalization modeling for more human-like speech, and multimodal alignment across audio–vision–motion for fine-grained feedback.
+  My research interests lie at the intersection of generative AI and audio, controllable generation (symbolic music generation, TTS/Text-to-Audio), paralinguistic vocalization modeling for more human-like speech, and multimodal alignment across audio–vision–motion for fine-grained feedback.
 
 
 
@@ -152,7 +152,8 @@ content:
         quote: >
           Amphion is the lab led by <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">Prof. Zhizheng Wu</a></b>, focusing on the research of AI Audio, Music, and Speech Generation.
         description: |
-          As a research assistant in the Amphion Lab, I contributed to NVSpeech and explored state-of-the-art methods in **Text-to-Speech** and **Text-to-Audio** generation. This experience deepened my understanding of speech synthesis pipelines and the latest advancements in generative audio technologies.
+          As a research assistant in the Amphion Lab, I contributed to NVSpeech and my independent project SchenkerHnet. 
+          I explored state-of-the-art methods in **Text-to-Speech** and **Text-to-Audio** generation. 
 
       - layout: left
         title: NCEL
@@ -163,20 +164,20 @@ content:
         quote: >
           Network Communications and Economics Lab (NCEL) is the lab led by <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">Prof. Jianwei Huang</a></b>, focusing on the research of Network Economics, Wireless Communications, swarm Intelligence and Smart Grid.
         description: |
-          As a research assistant in the NCEL, I contributed to the Smart Grid project collaborated with Guangdong Power Grid. This project aims to develop a smart grid system that can predict the electric price through the analysis of historical data and real-time information.
+          As a research assistant in the NCEL, I contributed to the Smart Grid project E-Price collaborated with Guangdong Power Grid. This project aims to develop a smart grid system that can predict the electric price through the analysis of historical data and real-time information by LLM.
 
   - title: Recent Awards
     layout: text
     content: | # this will include new lines to allow paragraphs
       - <b>Dean List in School of Science and Engineering(2024--2025)</b>: In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year.
-      - <b> 28,29,30th Undergraduate Research Awards</b>: The Undergraduate Research Awards (URA) program is designed to encourage undergraduate students to engage in independent, faculty-guided research projects, and to explore their academic interests beyond classroom learning. Only individual projects will be eligible for funding.
+      - <b> 28,29,30th Undergraduate Research Awards</b>: Fund undergraduate students in independent, faculty-guided research projects.
 
   - title: Tech Stack
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - <b>Languages</b>: Python, PyTorch, HTML, Bash, VHDL
-      - <b>Tools</b>: Linux, Git&GitHub, Docker, Huggingface, Slurm, Vivado, MultiSim
-      - <b>Experience</b>: Deep Learning, Signal Processing & System, Digital Circuit Design
+      - <b>Programming Languages</b>: Python, PyTorch, HTML, Bash, VHDL
+      - <b>Development Tools</b>: Linux, Git&GitHub, Docker, Huggingface, Slurm, Vivado, MultiSim
+      - <b>Research Interests</b>: Deep Learning, Signal Processing & System, Digital Circuit Design
 # Footer
 footer_show_references: false
 # references_title: References on request (Override references text)
