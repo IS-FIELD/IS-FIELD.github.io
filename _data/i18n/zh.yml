@@ -38,9 +38,9 @@ content:
         quote: >
           Amphion 是由 <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">武执政教授</a></b> 领导的实验室，主要研究 AI 音频、音乐与语音生成。
         description: |
-          	我独立完成 SchenkerHnet 项目并参与贡献了 NVSpeech 项目 (被ICASSP 2026 接收)
-	
-            在 SchenkerHnet 中我独立构建了学界首个百万级基于乐理结构的符号音乐数据集，构建了基于 H-Net ， 结合申克理论的符号音乐生成模型。模型能够生成高乐理可解释性，具备长程结构连接，达到单乐章长度级别音乐。
+          我独立完成 SchenkerHnet 项目并参与贡献了 NVSpeech 项目 (被ICASSP 2026 接收)
+
+          在 SchenkerHnet 中我独立构建了学界首个百万级基于乐理结构的符号音乐数据集，构建了基于 H-Net ， 结合申克理论的符号音乐生成模型。模型能够生成高乐理可解释性，具备长程结构连接，达到单乐章长度级别音乐。
 
             在 NVSpeech 中我构建了提取副语言时间戳的整个工作流，并在多个大型数据集上完成验证，为每种副语言生成了大量语音-文本对齐的切片，我还负责设计 NVSpeech 项目主页。
 
@@ -52,7 +52,7 @@ content:
           网络通信与经济实验室（NCEL）由 <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">黄建伟教授</a></b> 领导，主要研究网络经济学、无线通信、群体智能与智能电网。
         description: |
           在 NCEL 我参与了与广东电网合作的智能电网项目 E-Price，负责影响电价的数据集构建与电价预测模型的设计及微调：围绕 GDELT 和 EIA 实现了带时间与关键词约束的新闻检索流程，并构建了通过LLM分析历史数据与实时新闻信息，能够精确预测未来电价的智能电网系统。
-          
+
   - title: "发表成果"
     layout: list
     content:
