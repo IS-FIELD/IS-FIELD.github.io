@@ -36,18 +36,51 @@ Huggingface_username: IsField
 
 # About Section
 # about_title: About Me (Use this to override about section title)
-about_profile_image: images/Photo7.jpg
+about_profile_image: images/photo8.jpg
 about_content: | # this will include new lines to allow paragraphs
 
-  Hi, I’m Yiheng Lu, a 3rd-year undergraduate at The Chinese University of Hong Kong, Shenzhen majoring in Electrical and Computer Engineering with a minor in Music.
-  
-  I currently work as a Research Assistant in Amphion and NCEL, contributing to projects across speech modeling and smart-grid forecasting.
-  
-  My research interests lie at the intersection of generative AI and audio, controllable generation (symbolic music generation, TTS/Text-to-Audio), paralinguistic vocalization modeling for more human-like speech, and multimodal alignment across audio–vision–motion for fine-grained feedback.
+  I am an undergraduate student in Electronic and Computer Engineering (Class of 2027) at The Chinese University of Hong Kong, Shenzhen, with a minor in Music.
+
+  At the Amphion Lab, I focus on AI audio research. I contributed to NVSpeech, the first large-scale paralinguistic audio dataset in academia, which has been accepted by ICASSP 2026. I am also independently developing SchenkerHnet, the first pretraining-scale symbolic music generation model grounded in structured music theory.
+
+  At the Network and Computational Economics Lab (NCEL), I participated in the E-Price project in collaboration with Guangdong Power Grid, where I developed the first long-term electricity price forecasting system driven by news events using large language models.
+
+  I have also led the development of several user-oriented interactive AI systems, including HyCoSeg for COVID-19 lung CT lesion segmentation, FingerSense for intelligent piano hand-motion analysis, and PaperHelper for assisting novice researchers in literature retrieval and synthesis.
+
+  My research aims to enhance the interpretability of generative AI in audio and to build practical human-centered AI systems that address real user needs.
 
 
 
 content:
+  - title: Research Experience
+    layout: list
+    content:
+      - layout: left
+        title: Amphion
+        sub_title: Research Assistant
+        caption: October 2024 - Present
+        link: https://github.com/open-mmlab/Amphion/tree/main
+        link_text: '<i class="fab fa-github"></i> Amphion GitHub Page'
+        quote: >
+          Amphion is the lab led by <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">Prof. Zhizheng Wu</a></b>, focusing on the research of AI Audio, Music, and Speech Generation.
+        description: |
+          I independently led the SchenkerHnet project and contributed to the NVSpeech project (accepted by ICASSP 2026).
+
+          In SchenkerHnet, I constructed the first million-scale symbolic music dataset grounded in music-theoretic structure and developed a symbolic music generation model based on H-Net integrated with Schenkerian theory. The model generates music with strong theoretical interpretability, captures long-range structural dependencies, and scales to full movement-length compositions.
+
+          In NVSpeech, I built the complete pipeline for extracting timestamped paralinguistic features and validated it across multiple large-scale datasets. I also generated a substantial number of speech–text aligned segments for each paralinguistic category and was responsible for designing the NVSpeech project website. 
+
+      - layout: left
+        title: NCEL
+        sub_title: Research Assistant
+        caption: May 2025 - Present
+        link: https://ncel.cuhk.edu.cn/
+        link_text: '<i class="fas fa-cloud"></i> NCEL website'
+        quote: >
+          Network Communications and Economics Lab (NCEL) is the lab led by <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">Prof. Jianwei Huang</a></b>, focusing on the research of Network Economics, Wireless Communications, swarm Intelligence and Smart Grid.
+        description: |
+          At NCEL, I participated in the E-Price smart grid project in collaboration with Guangdong Power Grid, where I was responsible for constructing electricity price–relevant datasets and designing and fine-tuning forecasting models. Specifically, I implemented a time- and keyword-constrained news retrieval pipeline based on GDELT and EIA data, and developed an LLM-driven system that integrates historical data with real-time news to accurately forecast future electricity prices.
+
   - title: Publications # Title for the section
     layout: list # Type of content section (list/text)
     content:
@@ -62,23 +95,13 @@ content:
 
 
         description: |
-          NVSpeech is an integrated pipeline for modeling human-like speech with paralinguistic vocalizations, bridging dataset construction, paralinguistic-aware ASR, and controllable TTS in a unified framework. In this project, I contributed to the recognition and synthesis side by developing timestamp-based filler and prosody feature extraction with WhisperX, FunAudio, and Whisper-timestamped, evaluating robustness across Emilia and EARS MM_TTS, generating over 100 text slices for each filler label to support synthesis and evaluation, and designing the project homepage to present the system architecture, demos, and datasets.
+          NVSpeech is an integrated pipeline for modeling human-like speech with paralinguistic vocalizations, bridging dataset construction, paralinguistic-aware ASR, and controllable TTS in a unified framework. In this project, I contributed to the recognition and synthesis side by developing timestamp-based paralanguage and prosody feature extraction with WhisperX, FunAudio, and Whisper-timestamped, evaluating robustness across Emilia and EARS MM_TTS, generating over 100 text slices for each paralanguage label to support synthesis and evaluation, and designing the project homepage to present the system architecture, demos, and datasets.
         # quote: >
-        #   I contributed to advancing filler-word recognition and prosody-aware speech processing through feature engineering, dataset evaluation, and data preparation for synthesis.
+        #   I contributed to advancing paralanguage-word recognition and prosody-aware speech processing through feature engineering, dataset evaluation, and data preparation for synthesis.
 
         # description: |
-        #   I proposed a timestamp-based filler and prosody feature extraction method leveraging WhisperX, FunAudio, and Whisper-timestamped to improve recognition accuracy. I further conducted cross-dataset evaluation on Emilia and EARS MM_TTS, validating robustness across English long-form audio and daily conversations. Additionally, I generated over 100 text slices per filler label to support TTS synthesis and evaluation, and designed the NVSpeech project homepage to present the system architecture, demos, and datasets.
+        #   I proposed a timestamp-based paralanguage and prosody feature extraction method leveraging WhisperX, FunAudio, and Whisper-timestamped to improve recognition accuracy. I further conducted cross-dataset evaluation on Emilia and EARS MM_TTS, validating robustness across English long-form audio and daily conversations. Additionally, I generated over 100 text slices per paralanguage label to support TTS synthesis and evaluation, and designed the NVSpeech project homepage to present the system architecture, demos, and datasets.
 
-
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any
-                      # other value (or no value) means no border will be displayed
-        title: E-Price
-        # icon: fas cloud
-        link: https://is-field.github.io/
-        link_text: Event-aware Long-term Electricity Price Forecasting via Large Language Models (Manuscript under review)
-        description: |
-          This project studies long-term electricity price forecasting through a hybrid framework that combines structured trend modeling with event-aware reasoning over news, aiming to capture both stable market fundamentals and high-impact external shocks. I contributed to the event-data and forecasting pipeline by building time- and keyword-conditioned news retrieval workflows for GDELT, automating the conversion from LLM-generated search plans to executable queries, collecting official yearly price-driver data and forecasts from EIA-oriented sources, improving retrieval robustness against malformed outputs, rate limits, and overlong queries, and supporting later benchmark experiments that connect event-aware news signals with long-horizon forecasting evaluation.
 
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any
@@ -90,6 +113,21 @@ content:
         description: |
          SchenkerHnet is my independent research project on structure-aware symbolic music generation, which aims to bring Schenkerian hierarchy into AI models so that generated music reflects long-range tonal organization rather than only local token patterns. To build this system, I reconstructed large-scale classical piano corpora into theory-guided training data with harmonic, tonal, notes density, and structural annotations, redesigned the representation from coarse beat-level tokens to a cleaner tick-level JSONL format, and developed a hierarchical encoder–router–downsampler–main network–upsampler pipeline with Schenker-aware routing and long-memory modeling inspired by dynamic chunking network (Hnet) and Mamba. The project is currently being scaled to larger corpora for interpretable and structurally coherent long-form music generation.
 
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: E-Price
+        # icon: fas cloud
+        link: https://is-field.github.io/
+        link_text: Event-aware Long-term Electricity Price Forecasting via Large Language Models (Manuscript under review)
+        description: |
+          This project studies long-term electricity price forecasting through a hybrid framework that combines structured trend modeling with event-aware reasoning over news, aiming to capture both stable market fundamentals and high-impact external shocks. I contributed to the event-data and forecasting pipeline by building time- and keyword-conditioned news retrieval workflows for GDELT, automating the conversion from LLM-generated search plans to executable queries, collecting official yearly price-driver data and forecasts from EIA-oriented sources, improving retrieval robustness against malformed outputs, rate limits, and overlong queries, and supporting later benchmark experiments that connect event-aware news signals with long-horizon forecasting evaluation.
+
+  - title: Recent Awards
+    layout: text
+    content: | # this will include new lines to allow paragraphs
+      - <b>Dean List in School of Science and Engineering(2024--2025)</b>: In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year.
+      - <b> 28,29,30th Undergraduate Research Awards</b>: Fund undergraduate students in independent, faculty-guided research projects.
 
   - title: Selected Projects # Title for the section
     layout: list # Type of content section (list/text)
@@ -103,11 +141,14 @@ content:
         link: https://github.com/IS-FIELD/HyCoSeg
         link_text: '<i class="fab fa-github"></i> Manual and Deep Learning Hybrid Approach for COVID-19 Lung Lesion Segmentation'
   
-        quote: >
-          I led my team to present a hybrid method for segmenting lung lesions in COVID-19 CT scans. It combines classical image processing with deep learning to detect 3 common lesion types.
+        # quote: >
+        #   I led my team to present a hybrid method for segmenting lung lesions in COVID-19 CT scans. It combines classical image processing with deep learning to detect 3 common lesion types.
 
         description: |
-          HyCoSeg is a hybrid pipeline that integrates classical image processing with deep learning for the segmentation of COVID-19 lung lesions in CT scans. The lung regions are first delineated with a 2D U-Net (LungMask) to constrain subsequent detection. Ground-glass opacities are segmented through Hounsfield Unit thresholding combined with morphological post-processing, while consolidation is identified using a coarse-to-fine deep model enhanced by Gabor texture filtering. Pleural effusion is extracted by boundary-aware density thresholding followed by connected-component analysis.
+          HyCoSeg is a hybrid pipeline that integrates classical image processing with deep learning for COVID-19 lung lesion segmentation in CT scans. The system first employs a 2D U-Net (LungMask) to delineate lung regions, providing anatomical constraints for subsequent detection. Ground-glass opacities are segmented using Hounsfield Unit thresholding combined with morphological post-processing, while consolidation lesions are identified through a coarse-to-fine deep model enhanced with Gabor texture filtering. Pleural effusion is extracted via boundary-aware density thresholding followed by connected-component analysis.
+
+          I designed the overall technical framework, led data collection and preprocessing, fine-tuned the 2D U-Net model, and built the unified pipeline for three-type lesion recognition.
+
 
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any
@@ -117,13 +158,11 @@ content:
         link: https://github.com/IS-FIELD/FingerSense
         link_text: '<i class="fab fa-github"></i> A Piano Gesture Correction Pipeline with Motion Comparison and Real-Time Feedback'
 
-        quote: >
-          I developed FingerSense, a piano-practice analysis system that compares a student’s observed hand motion with a generated expert-standard motion and localizes technical errors into timestamped corrective feedback.
+        # quote: >
+        #   I developed FingerSense, a piano-practice analysis system that compares a student’s observed hand motion with a generated expert-standard motion and localizes technical errors into timestamped corrective feedback.
 
         description: |
-          FingerSense takes one overhead piano-practice video and splits it into synchronized audio and video branches.  
-          The system uses PianoMotion10M to generate a standard hand-motion sequence from the audio, and reconstructs the observed MANO-space gesture sequence from video with HaMeR.  
-          It then aligns the two motion streams, computes frame-level losses, and packages the evidence into an LLM-ready report that can be converted into professional advice precise to the second.
+          FingerSense is an AI system I independently developed for real-time analysis of piano hand movements. It takes an overhead piano-practice video as input and splits it into temporally aligned audio and video streams. The system leverages PianoMotion10M to generate a reference hand-motion sequence in MANO space from the audio, while reconstructing the observed hand-motion sequence from video using HaMeR. It then aligns the two motion streams, computes frame-level losses, and feeds the structured evidence into an LLM to produce professional, second-level precise feedback for performance correction.
 
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any
@@ -133,44 +172,14 @@ content:
         link: https://github.com/IS-FIELD/PaperHelper
         link_text: '<i class="fab fa-github"></i> An integrated system for novice academic researchers that combines two complementary components'
   
-        quote: >
-          I led my team to leverage the latest AI technologies to build a system that helps novice academic researchers with paper finding, summarization, and retrieval.
+        # quote: >
+        #   I led my team to leverage the latest AI technologies to build a system that helps novice academic researchers with paper finding, summarization, and retrieval.
 
         description: |
-          We critically analyzed the limitations of current academic search engines and conventional RAG systems.  
-          I proposed an improved architecture and coordinated the division of tasks among team members.  
-          My role focused on backend development, including model fine-tuning, and the integration of MCP, large language models (LLMs), and database systems to ensure seamless functionality.
-  - title: Research Experience
-    layout: list
-    content:
-      - layout: left
-        title: Amphion
-        sub_title: Research Assistant
-        caption: October 2024 - Present
-        link: https://github.com/open-mmlab/Amphion/tree/main
-        link_text: '<i class="fab fa-github"></i> Amphion GitHub Page'
-        quote: >
-          Amphion is the lab led by <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">Prof. Zhizheng Wu</a></b>, focusing on the research of AI Audio, Music, and Speech Generation.
-        description: |
-          As a research assistant in the Amphion Lab, I contributed to NVSpeech and my independent project SchenkerHnet. 
-          I explored state-of-the-art methods in **Text-to-Speech** and **Text-to-Audio** generation. 
+          We developed PaperHelper, a system designed to assist novice researchers in academic paper retrieval and management, addressing the rigidity and ambiguity of traditional RAG-based search systems. The system leverages a fine-tuned BART model to classify user queries and employs an MCP-based retrieval mechanism to traverse and interpret the entire MongoDB-backed corpus, enabling precise identification and aggregation of relevant literature.
 
-      - layout: left
-        title: NCEL
-        sub_title: Research Assistant
-        caption: May 2025 - Present
-        link: https://ncel.cuhk.edu.cn/
-        link_text: '<i class="fas fa-cloud"></i> NCEL website'
-        quote: >
-          Network Communications and Economics Lab (NCEL) is the lab led by <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">Prof. Jianwei Huang</a></b>, focusing on the research of Network Economics, Wireless Communications, swarm Intelligence and Smart Grid.
-        description: |
-          As a research assistant in the NCEL, I contributed to the Smart Grid project E-Price collaborated with Guangdong Power Grid. This project aims to develop a smart grid system that can predict the electric price through the analysis of historical data and real-time information by LLM.
+          As the team lead, I proposed the overall system architecture and coordinated task allocation. My primary contribution focused on backend development, including fine-tuning the BART model, designing and implementing MCP tools for structured retrieval, and integrating the frontend, large language models (LLMs), and database infrastructure into a unified, end-to-end system.
 
-  - title: Recent Awards
-    layout: text
-    content: | # this will include new lines to allow paragraphs
-      - <b>Dean List in School of Science and Engineering(2024--2025)</b>: In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year.
-      - <b> 28,29,30th Undergraduate Research Awards</b>: Fund undergraduate students in independent, faculty-guided research projects.
 
   - title: Tech Stack
     layout: text

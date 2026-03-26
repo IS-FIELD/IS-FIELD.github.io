@@ -17,14 +17,42 @@ about:
   content: |
     我是香港中文大学（深圳）电子与计算机工程专业2027届本科生，辅修音乐。
     
-    我目前在 Amphion 与 NCEL 实验室分别参与AI音频与智能电网相关课题。
+    我在 Amphion 实验室深入研究AI音频，参与发表了学界首个大型副语言音频数据集 NVSpeech 并被ICASSP2026 接收，我正独立开发首个预训练级别的大型乐理结构化符号音乐生成模型 SchenkerHnet。
+    
+    我在 NCEL 实验室参与了与广东电网合作的智能电网项目 E-Price，开发了首个基于大语言模型的新闻事件驱动长期电价预测系统。
 
-    我的研究方向集中在生成式人工智能音频，AI符号音乐的可解释性生成，语音中的副语言发声建模，以及音视频多模态的对齐与评估。
+    我也带领团队开发了多个面向用户需求的交互人工智能系统，包括 COVID-19 肺部CT病灶分割系统 HyCoSeg、智能钢琴演奏手部动作分析系统 FingerSense，以及面向科研新手的智能文献检索整合系统 PaperHelper。
+
+    我的研究旨在使生成式人工智能音频具备更高的可解释性，以及开发实用的人机交互系统，让AI真正服务用户的切实需求。
 
 
 
 
 content:
+  - title: "科研经历"
+    content:
+      - title: "Amphion"
+        sub_title: "研究助理"
+        caption: "2024年10月 - 至今"
+        link_text: '<i class="fab fa-github"></i> Amphion GitHub 页面'
+        quote: >
+          Amphion 是由 <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">武执政教授</a></b> 领导的实验室，主要研究 AI 音频、音乐与语音生成。
+        description: |
+          	我独立完成 SchenkerHnet 项目并参与贡献了 NVSpeech 项目 (被ICASSP 2026 接收)
+	
+            在 SchenkerHnet 中我独立构建了学界首个百万级基于乐理结构的符号音乐数据集，构建了基于 H-Net ， 结合申克理论的符号音乐生成模型。模型能够生成高乐理可解释性，具备长程结构连接，达到单乐章长度级别音乐。
+
+            在 NVSpeech 中我构建了提取副语言时间戳的整个工作流，并在多个大型数据集上完成验证，为每种副语言生成了大量语音-文本对齐的切片，我还负责设计 NVSpeech 项目主页。
+
+      - title: "NCEL"
+        sub_title: "研究助理"
+        caption: "2025年5月 - 至今"
+        link_text: '<i class="fas fa-cloud"></i> NCEL 网站'
+        quote: >
+          网络通信与经济实验室（NCEL）由 <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">黄建伟教授</a></b> 领导，主要研究网络经济学、无线通信、群体智能与智能电网。
+        description: |
+          在 NCEL 我参与了与广东电网合作的智能电网项目 E-Price，负责影响电价的数据集构建与电价预测模型的设计及微调：围绕 GDELT 和 EIA 实现了带时间与关键词约束的新闻检索流程，并构建了通过LLM分析历史数据与实时新闻信息，能够精确预测未来电价的智能电网系统。
+          
   - title: "发表成果"
     layout: list
     content:
@@ -33,7 +61,7 @@ content:
         title: "NVSpeech"
         link_text: '<i class="ai ai-arxiv"></i> 面向副语言发声的人类式语音建模一体化可扩展流程'
         description: |
-          NVSpeech 是一个人声副语言数据集，围绕副语言发声现象，将数据集构建、具备副语言感知能力的语音识别，以及可控语音合成整合到同一框架中。在这个项目中，我主要参与了识别与合成相关部分：利用 WhisperX、FunAudio 和 Whisper-timestamped 设计了基于时间戳的 filler 与韵律特征提取流程，在 Emilia 和 EARS MM_TTS 上完成了跨数据集鲁棒性验证，并为每类 filler 生成了 100 条以上文本切片以支持合成与评测；此外，我还负责设计 NVSpeech 项目主页，用于展示系统架构、音频 demo 与数据资源。
+          NVSpeech 是学界首个人声副语言数据集，围绕副语言发声现象，将数据集构建、具备副语言感知能力的语音识别，以及可控语音合成整合到同一框架中。在这个项目中，我主要参与了识别与合成相关部分：利用 WhisperX、FunAudio 和 Whisper-timestamped 设计了基于时间戳的副语言与韵律特征提取流程，在 Emilia 和 EARS MM_TTS 上完成了跨数据集鲁棒性验证，并为每类副语言生成了大量文本-音频对齐切片以支持合成与评测；此外，我还负责设计 NVSpeech 项目主页，用于展示系统架构、音频 demo 与数据资源。
 
         # quote: >
         #   我参与了副语言识别与韵律感知语音处理的推进工作，负责特征工程、数据集评测，以及语音合成所需的数据准备。
@@ -44,21 +72,26 @@ content:
       - layout: left
         border: weak  # Value of `weak` will display a weak border below this item. # Any
                       # other value (or no value) means no border will be displayed
-        title: E-Price
-        # icon: fas cloud
-        link_text: 基于大语言模型的事件驱动长期电力价格预测（论文在审）
-        description: |
-          这个项目聚焦于长期电价预测，核心思路是将电价趋势与基于大语言模型的新闻事件推理相结合，从而同时捕捉稳定的市场基本面与高影响力的外部冲击。我在其中主要参与了事件数据与预测流程的搭建：围绕 GDELT 实现了带时间与关键词约束的新闻检索流程，完成了从 LLM 生成搜索计划到可执行 query 的自动化转换，收集了面向 EIA 的官方年度 price driver 历史值与预测值，并针对输出格式异常、请求限流和 query 过长等问题优化了检索过程。
-
-      - layout: left
-        border: weak  # Value of `weak` will display a weak border below this item. # Any
-                      # other value (or no value) means no border will be displayed
         title: SchenkerHnet
         # icon: fas cloud
         link_text: 一种面向长程符号音乐生成的层级化与理论引导框架 (开发中)
         description: |
           SchenkerHnet 是我独立推进的结构化符号音乐生成项目，目标是把申克乐理分析中的层级结构真正引入现代 AI 模型，让生成结果学习到长程调性组织，而不只是局部音符模式。围绕这个目标，我首先把大规模古典钢琴语料重构为带有和声、调性、音符密度与结构标注的 theory-guided 训练数据，又将原先较粗糙的 beat-level 表示重构为更稳定的 tick-level JSONL 格式；在模型上，我进一步设计了 编码器,申克单元下采样模块, 主网络, 上采样 的层级框架，并结合 Mamba 式长记忆建模来学习深层结构。该项目目前正在向更大规模语料训练推进，以实现更可解释、结构更连贯的长篇符号音乐生成。
 
+      - layout: left
+        border: weak  # Value of `weak` will display a weak border below this item. # Any
+                      # other value (or no value) means no border will be displayed
+        title: E-Price
+        # icon: fas cloud
+        link_text: 基于大语言模型的事件驱动长期电力价格预测（论文在审）
+        description: |
+          这个项目聚焦于长期电价预测，核心思路是将电价趋势与基于大语言模型的新闻事件推理相结合，从而同时捕捉稳定的市场基本面与高影响力的外部冲击。我在其中主要参与了事件数据与预测流程的搭建：围绕 GDELT 实现了带时间与关键词约束的新闻检索流程，完成了从 LLM 生成搜索计划到可执行 query 的自动化转换，收集了面向 EIA 的官方年度 price driver 历史值与预测值，并针对输出格式异常、请求限流和 query 过长等问题优化了检索过程。
+
+
+  - title: "近期奖项"
+    content: |
+      - <b>2024至2025年度院长荣誉榜</b>：表彰 2024-25 学年本科阶段取得的整体学业优秀成绩
+      - <b>第28、29、30届本科生科研奖</b>：资助本科生个人在导师指导下开展的独立研究工作
 
 
   - title: "项目经历"
@@ -66,50 +99,28 @@ content:
 
       - title: "HyCoSeg"
         link_text: '<i class="fab fa-github"></i> 基于人工与深度学习融合的 COVID-19 肺部病灶分割系统'
-        quote: >
-          我带领团队提出了一种用于 COVID-19 CT 肺部病灶分割的混合方法，将传统图像处理与深度学习结合，以检测 3 类常见病灶。
+        # quote: >
+        #   我带领团队提出了一种用于 COVID-19 CT 肺部病灶分割的混合方法，将传统图像处理与深度学习结合，以检测 3 类常见病灶。
         description: |
-          HyCoSeg 是一个将传统图像处理与深度学习结合的混合式流程，用于 COVID-19 CT 扫描中的肺部病灶分割。系统首先使用 2D U-Net（LungMask）勾勒肺部区域，以约束后续检测范围。随后，通过 Hounsfield Unit 阈值结合形态学后处理分割磨玻璃影；再利用结合 Gabor 纹理滤波的粗到细深度模型识别实变病灶；最后通过边界感知密度阈值与连通域分析提取胸腔积液。
+          HyCoSeg 是一个将传统图像处理与深度学习结合的混合式流程，用于 COVID-19 CT 扫描中的肺部病灶分割。系统首先使用 2D U-Net（LungMask）勾勒肺部区域，以约束后续检测范围。随后，通过 Hounsfield Unit 阈值结合形态学后处理分割磨玻璃影；再利用结合 Gabor 纹理滤波的粗到细深度模型识别实变病灶；最后通过边界感知密度阈值与连通域分析提取胸腔积液。我设计了整体技术路径，并负责
+          数据收集清洗，微调 2D U-Net 与搭建 3 类病灶识别的整体框架
 
       - title: "FingerSense"
         link_text: '<i class="fab fa-github"></i> 实时反馈的智能钢琴演奏手部动作分析系统'
-        quote: >
-          我开发了 FingerSense， 用深度学习方法将根据音频生成的标准钢琴演奏手部动作与学生的实际动作进行比较，将错误动作定位并返回智能建议。
+        # quote: >
+        #   我开发了 FingerSense， 用深度学习方法将根据音频生成的标准钢琴演奏手部动作与学生的实际动作进行比较，将错误动作定位并返回智能建议。
         description: |
-          FingerSense 以一段俯视钢琴练习视频作为输入，并将其拆分为同步对齐的音频与视频分支。  
-          系统使用 PianoMotion10M 从音频生成MANO 空间下的标准手部动作序列，同时借助 HaMeR 从视频重建 MANO 空间下的实际手部动作序列。随后，系统对两路动作流进行时序对齐，计算逐帧损失，用 LLM 分析损失并生成精确到秒的专业钢琴演奏手部动作纠正建议。
+          我独立开发了一个能实时分析钢琴演奏手部动作的人工智能系统，系统以一段俯视钢琴练习演奏视频作为输入，并将其拆分为时间对齐的音频与视频。  
+          系统使用 PianoMotion10M 从音频生成MANO 空间下的标准手部动作序列，同时借助 HaMeR 从视频重建 MANO 空间下的实际手部动作序列。随后，系统对两路动作流进行时序对齐，计算逐帧损失，用 LLM 分析损失并生成精确到秒的专业动作纠正建议。
 
       - title: "PaperHelper"
         link_text: '<i class="fab fa-github"></i> 面向科研新手的智能文献检索整合系统'
-        quote: >
-          我带领团队以深度学习算法构建了一个帮助科研新手进行论文检索、总结与信息获取的系统。
+        # quote: >
+        #   我带领团队以深度学习算法构建了一个帮助科研新手进行论文检索、总结与信息获取的系统。
         description: |
-          我们系统分析了现有学术搜索引擎与传统 RAG 系统的局限。我负责后端开发，包括构建 ICLR25 论文数据集构建，BART模型微调，以及 MCP、LLM 与 MongoDB 数据库系统的集成，确保系统整体协同与稳定运行。
+          我带领团队开发了一个帮助科研新手进行论文检索和管理的系统，克服了传统RAG 检索系统生硬，模糊的缺陷。系统通过 BART 分类用户输入的请求并用MCP阅读检索整个 MongoDB 代码库输出目标文献。我负责后端开发，包括构建 ICLR25 论文数据集构建，BART模型微调，以及 开发MCP tools, 并集成了前端，模型，MCP，MongoDB 的整体框架。
 
-  - title: "科研经历"
-    content:
-      - title: "Amphion"
-        sub_title: "研究助理"
-        caption: "2024年10月 - 至今"
-        link_text: '<i class="fab fa-github"></i> Amphion GitHub 页面'
-        quote: >
-          Amphion 是由 <b><a href="https://drwuz.com/" style="color:inherit;font-weight:bold;" target="_blank">武执政教授</a></b> 领导的实验室，主要研究 AI 音频、音乐与语音生成。
-        description: |
-          作为 Amphion 实验室的研究助理，我参与贡献了 NVSpeech 项目并独立推进了 SchenkerHnet 项目，在此过程中我探索了 **文本到语音（Text-to-Speech）** 与 **文本到音频（Text-to-Audio）** 生成的最新范式。
 
-      - title: "NCEL"
-        sub_title: "研究助理"
-        caption: "2025年5月 - 至今"
-        link_text: '<i class="fas fa-cloud"></i> NCEL 网站'
-        quote: >
-          网络通信与经济实验室（NCEL）由 <b><a href="https://sse.cuhk.edu.cn/en/faculty/huangjianwei" style="color:inherit;font-weight:bold;" target="_blank">黄建伟教授</a></b> 领导，主要研究网络经济学、无线通信、群体智能与智能电网。
-        description: |
-          作为 NCEL 的研究助理，我参与了与广东电网合作的智能电网项目 E-Price 。该项目旨在通过LLM分析历史数据与实时信息，构建能够预测电价的智能电网系统。
-
-  - title: "近期奖项"
-    content: |
-      - <b>2024至2025年度院长荣誉榜</b>：表彰 2024-25 学年本科阶段取得的整体学业优秀成绩
-      - <b>第28、29、30届本科生科研奖</b>：资助本科生个人在导师指导下开展的独立研究工作
 
   - title: "技术栈"
     content: |
