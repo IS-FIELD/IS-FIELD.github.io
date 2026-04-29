@@ -126,8 +126,9 @@ content:
   - title: Recent Awards
     layout: text
     content: | # this will include new lines to allow paragraphs
-      - <b>Dean List in School of Science and Engineering(2024--2025)</b>: In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year.
-      - <b> 28,29,30th Undergraduate Research Awards</b>: Fund undergraduate students in independent, faculty-guided research projects.
+      - <b>Artistic Insight Scholarship</b>: Awarded to students with exceptional artistic talent and innovative spirit who create original and distinctive artistic projects supervision
+      - <b>Dean List in School of Science and Engineering(2024--2025)</b>: In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year
+      - <b> 28,29,30th Undergraduate Research Awards</b>: Fund undergraduate students in independent, faculty-guided research projects
 
   - title: Selected Projects # Title for the section
     layout: list # Type of content section (list/text)
