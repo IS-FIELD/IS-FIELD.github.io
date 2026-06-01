@@ -126,6 +126,7 @@ content:
   - title: Recent Awards
     layout: text
     content: | # this will include new lines to allow paragraphs
+    
       - <b>Meritorious Winner, Mathematical Contest in Modeling Contest in Modeling (MCM)</b>
       - <b>Artistic Insight Scholarship</b>: Awarded to students with exceptional artistic talent and innovative spirit who create original and distinctive artistic projects supervision
       - <b>Dean List in School of Science and Engineering(2024--2025)</b>: In recognition of having achieved overall academic excellence in undergraduate study for the 2024-25 academic year
