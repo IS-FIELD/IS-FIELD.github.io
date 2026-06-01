@@ -89,8 +89,7 @@ content:
 
 
   - title: "近期奖项"
-    content: |
-          
+    content: |-
       - <b>2026 美国大学生数学建模竞赛 MCM 一等奖（Meritorious Winner）</b>
       - <b>悟心艺术梦想奖学金</b>：表彰具有卓越的艺术才华和创新精神，做出独特新颖的艺术原创项目的优秀学生
       - <b>2024至2025年度院长荣誉榜</b>：表彰 2024-25 学年本科阶段取得的整体学业优秀成绩
@@ -126,7 +125,7 @@ content:
 
 
   - title: "技术栈"
-    content: |
+    content: |-
       - <b>编程语言</b>：Python, PyTorch, HTML, Bash, VHDL
       - <b>开发工具</b>：Linux, Git&GitHub, Docker, Hugging Face, Slurm, Vivado, MultiSim
       - <b>研究领域</b>：深度学习、信号与系统、数字电路设计
