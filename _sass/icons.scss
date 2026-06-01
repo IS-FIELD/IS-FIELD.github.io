@@ -21,7 +21,7 @@ ul.icons a {
   box-shadow: none;
   padding:0;
   border-radius: 100%;
-  color: #aaa;
+  color: var(--icon-color, #aaa);
 }
 
 .social-link {
@@ -54,24 +54,31 @@ ul.icons a {
 }
 
 .icons .lang-toggle {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
   width: 2.75rem;
   height: 2.75rem;
   padding: 0;
   margin: 0;
   border: 0;
-  border-radius: 0;
-  background: none;
-  color: #333;
+  border-radius: 100%;
+  background: transparent;
+  color: var(--icon-color, #aaa);
   box-shadow: none;
   line-height: 1;
   vertical-align: middle;
-  transition: color 0.25s ease-in-out, opacity 0.25s ease-in-out;
+  cursor: pointer;
+  -moz-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  -webkit-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  -ms-transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
+  transition: background-color 0.25s ease-in-out, color 0.25s ease-in-out;
 }
 
 .icons .lang-toggle:hover,
 .icons .lang-toggle:focus {
-  background: none;
-  color: #666;
+  background: rgba(0, 0, 0, 0.025);
+  color: var(--icon-hover-color, #666);
 }
 
 .icons .lang-toggle i {
@@ -100,6 +107,8 @@ body[data-language="zh"] .lang-zh.lang-block {
 }
 
 .icons {
+  --icon-color: #aaa;
+  --icon-hover-color: #666;
   padding: 0;
   font-size: 1rem;
   margin-bottom:20px;
@@ -113,21 +122,17 @@ body[data-language="zh"] .lang-zh.lang-block {
 }
 
 .dark {
+  .icons {
+    --icon-color: #e6e6e6;
+    --icon-hover-color: #aaa;
+  }
+
   .icons i {
     background: none;
-    color: #222;
+    color: inherit;
   }
 
   .icons a:hover i {
-    color: #e6e6e6;
-  }
-
-  .icons .lang-toggle {
-    color: #222;
-  }
-
-  .icons .lang-toggle:hover,
-  .icons .lang-toggle:focus {
-    color: #e6e6e6;
+    color: inherit;
   }
 }
